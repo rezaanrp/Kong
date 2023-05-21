@@ -1,0 +1,925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ParkerModel1StoreContainer" CdmEntityContainer="ParkerEntities1">
+    <EntitySetMapping Name="mAuthentications">
+      <EntityTypeMapping TypeName="ParkerModel1.mAuthentication">
+        <MappingFragment StoreEntitySet="mAuthentication">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xUser_" ColumnName="xUser_" />
+          <ScalarProperty Name="xGroup_" ColumnName="xGroup_" />
+          <ScalarProperty Name="xInsert" ColumnName="xInsert" />
+          <ScalarProperty Name="xUpdate" ColumnName="xUpdate" />
+          <ScalarProperty Name="xDelete" ColumnName="xDelete" />
+          <ScalarProperty Name="xObject_" ColumnName="xObject_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mClientReferrals">
+      <EntityTypeMapping TypeName="ParkerModel1.mClientReferral">
+        <MappingFragment StoreEntitySet="mClientReferral">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xTime" ColumnName="xTime" />
+          <ScalarProperty Name="xDate" ColumnName="xDate" />
+          <ScalarProperty Name="xClientReferral" ColumnName="xClientReferral" />
+          <ScalarProperty Name="xTel" ColumnName="xTel" />
+          <ScalarProperty Name="xRequestedGoods" ColumnName="xRequestedGoods" />
+          <ScalarProperty Name="xAmount" ColumnName="xAmount" />
+          <ScalarProperty Name="xAddress" ColumnName="xAddress" />
+          <ScalarProperty Name="xAction" ColumnName="xAction" />
+          <ScalarProperty Name="xGenReferTo_" ColumnName="xGenReferTo_" />
+          <ScalarProperty Name="xReferName" ColumnName="xReferName" />
+          <ScalarProperty Name="xReferConfirm" ColumnName="xReferConfirm" />
+          <ScalarProperty Name="xReferConfirmSupplier_" ColumnName="xReferConfirmSupplier_" />
+          <ScalarProperty Name="xReferConfirmDate" ColumnName="xReferConfirmDate" />
+          <ScalarProperty Name="xContractPrice" ColumnName="xContractPrice" />
+          <ScalarProperty Name="xRecommenderCommission" ColumnName="xRecommenderCommission" />
+          <ScalarProperty Name="xReferFinanceConfirm" ColumnName="xReferFinanceConfirm" />
+          <ScalarProperty Name="xSupplier_" ColumnName="xSupplier_" />
+          <ScalarProperty Name="xSendWellComeMessage" ColumnName="xSendWellComeMessage" />
+          <ScalarProperty Name="xGenResultOfReferral_" ColumnName="xGenResultOfReferral_" />
+          <ScalarProperty Name="xComment" ColumnName="xComment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mClientReferralFollowUps">
+      <EntityTypeMapping TypeName="ParkerModel1.mClientReferralFollowUp">
+        <MappingFragment StoreEntitySet="mClientReferralFollowUp">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xDate" ColumnName="xDate" />
+          <ScalarProperty Name="xTime" ColumnName="xTime" />
+          <ScalarProperty Name="xGenFollowUp_" ColumnName="xGenFollowUp_" />
+          <ScalarProperty Name="xAction" ColumnName="xAction" />
+          <ScalarProperty Name="xConstructionStage" ColumnName="xConstructionStage" />
+          <ScalarProperty Name="xMasterFollowUp" ColumnName="xMasterFollowUp" />
+          <ScalarProperty Name="xSupplier_" ColumnName="xSupplier_" />
+          <ScalarProperty Name="xClientReferral_" ColumnName="xClientReferral_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mClientReferralSurveys">
+      <EntityTypeMapping TypeName="ParkerModel1.mClientReferralSurvey">
+        <MappingFragment StoreEntitySet="mClientReferralSurvey">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xClientReferral_" ColumnName="xClientReferral_" />
+          <ScalarProperty Name="xGenSurveyForWho_" ColumnName="xGenSurveyForWho_" />
+          <ScalarProperty Name="xAnswerNumber" ColumnName="xAnswerNumber" />
+          <ScalarProperty Name="xQuestion" ColumnName="xQuestion" />
+          <ScalarProperty Name="xAnswerContext" ColumnName="xAnswerContext" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mCompanies">
+      <EntityTypeMapping TypeName="ParkerModel1.mCompany">
+        <MappingFragment StoreEntitySet="mCompany">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xCompanyName" ColumnName="xCompanyName" />
+          <ScalarProperty Name="xBusinessNumber" ColumnName="xBusinessNumber" />
+          <ScalarProperty Name="xRegistrationNumber" ColumnName="xRegistrationNumber" />
+          <ScalarProperty Name="xNationalCode" ColumnName="xNationalCode" />
+          <ScalarProperty Name="xFieldActivity" ColumnName="xFieldActivity" />
+          <ScalarProperty Name="xTel" ColumnName="xTel" />
+          <ScalarProperty Name="xFax" ColumnName="xFax" />
+          <ScalarProperty Name="xEmail" ColumnName="xEmail" />
+          <ScalarProperty Name="xZipCode" ColumnName="xZipCode" />
+          <ScalarProperty Name="xAddress" ColumnName="xAddress" />
+          <ScalarProperty Name="xWebsite" ColumnName="xWebsite" />
+          <ScalarProperty Name="xSupplyManager" ColumnName="xSupplyManager" />
+          <ScalarProperty Name="xSupplyManagerTel" ColumnName="xSupplyManagerTel" />
+          <ScalarProperty Name="xDirectorFactor" ColumnName="xDirectorFactor" />
+          <ScalarProperty Name="xDirectorFactorTel" ColumnName="xDirectorFactorTel" />
+          <ScalarProperty Name="xGrade" ColumnName="xGrade" />
+          <ScalarProperty Name="xGradeDate" ColumnName="xGradeDate" />
+          <ScalarProperty Name="xSerial" ColumnName="xSerial" />
+          <ScalarProperty Name="xEvaluationPerson" ColumnName="xEvaluationPerson" />
+          <ScalarProperty Name="xSupplier_" ColumnName="xSupplier_" />
+          <ScalarProperty Name="xComment" ColumnName="xComment" />
+          <ScalarProperty Name="xActive" ColumnName="xActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mContractors">
+      <EntityTypeMapping TypeName="ParkerModel1.mContractor">
+        <MappingFragment StoreEntitySet="mContractor">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xName" ColumnName="xName" />
+          <ScalarProperty Name="xFamily" ColumnName="xFamily" />
+          <ScalarProperty Name="xFatherName" ColumnName="xFatherName" />
+          <ScalarProperty Name="xGenJob_" ColumnName="xGenJob_" />
+          <ScalarProperty Name="xNationalCode" ColumnName="xNationalCode" />
+          <ScalarProperty Name="xMobile" ColumnName="xMobile" />
+          <ScalarProperty Name="xTel" ColumnName="xTel" />
+          <ScalarProperty Name="xZone" ColumnName="xZone" />
+          <ScalarProperty Name="xAddress" ColumnName="xAddress" />
+          <ScalarProperty Name="xSupplier_" ColumnName="xSupplier_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mContractorsEvaluations">
+      <EntityTypeMapping TypeName="ParkerModel1.mContractorsEvaluation">
+        <MappingFragment StoreEntitySet="mContractorsEvaluation">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xContractors_" ColumnName="xContractors_" />
+          <ScalarProperty Name="xGenEvaluationName_" ColumnName="xGenEvaluationName_" />
+          <ScalarProperty Name="xScore" ColumnName="xScore" />
+          <ScalarProperty Name="xSupplier_" ColumnName="xSupplier_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mCustomers">
+      <EntityTypeMapping TypeName="ParkerModel1.mCustomer">
+        <MappingFragment StoreEntitySet="mCustomer">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xGenCUSTOMERTYPE_" ColumnName="xGenCUSTOMERTYPE_" />
+          <ScalarProperty Name="xName" ColumnName="xName" />
+          <ScalarProperty Name="xLastName" ColumnName="xLastName" />
+          <ScalarProperty Name="xBusinessNumber" ColumnName="xBusinessNumber" />
+          <ScalarProperty Name="xRegistrationNumber" ColumnName="xRegistrationNumber" />
+          <ScalarProperty Name="xNationalCode" ColumnName="xNationalCode" />
+          <ScalarProperty Name="xFatherName" ColumnName="xFatherName" />
+          <ScalarProperty Name="xChildNo" ColumnName="xChildNo" />
+          <ScalarProperty Name="xBirthDay" ColumnName="xBirthDay" />
+          <ScalarProperty Name="xMobile" ColumnName="xMobile" />
+          <ScalarProperty Name="xPhone" ColumnName="xPhone" />
+          <ScalarProperty Name="xEmploy" ColumnName="xEmploy" />
+          <ScalarProperty Name="xAddress" ColumnName="xAddress" />
+          <ScalarProperty Name="xZipCode" ColumnName="xZipCode" />
+          <ScalarProperty Name="xDate" ColumnName="xDate" />
+          <ScalarProperty Name="xSupplier_" ColumnName="xSupplier_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mCustomerCheckedLists">
+      <EntityTypeMapping TypeName="ParkerModel1.mCustomerCheckedList">
+        <MappingFragment StoreEntitySet="mCustomerCheckedList">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xCustomer_" ColumnName="xCustomer_" />
+          <ScalarProperty Name="xGen_" ColumnName="xGen_" />
+          <ScalarProperty Name="xType" ColumnName="xType" />
+          <ScalarProperty Name="xChecked" ColumnName="xChecked" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mCustomerQuestions">
+      <EntityTypeMapping TypeName="ParkerModel1.mCustomerQuestion">
+        <MappingFragment StoreEntitySet="mCustomerQuestion">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xCustomer_" ColumnName="xCustomer_" />
+          <ScalarProperty Name="xQuestion_" ColumnName="xQuestion_" />
+          <ScalarProperty Name="xFloorNumber" ColumnName="xFloorNumber" />
+          <ScalarProperty Name="xGenGroup_" ColumnName="xGenGroup_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mGenGroups">
+      <EntityTypeMapping TypeName="ParkerModel1.mGenGroup">
+        <MappingFragment StoreEntitySet="mGenGroup">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xType" ColumnName="xType" />
+          <ScalarProperty Name="xName" ColumnName="xName" />
+          <ScalarProperty Name="xValue" ColumnName="xValue" />
+          <ScalarProperty Name="xComment" ColumnName="xComment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mGoods">
+      <EntityTypeMapping TypeName="ParkerModel1.mGood">
+        <MappingFragment StoreEntitySet="mGoods">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xName" ColumnName="xName" />
+          <ScalarProperty Name="xCode" ColumnName="xCode" />
+          <ScalarProperty Name="xGenGroup_" ColumnName="xGenGroup_" />
+          <ScalarProperty Name="xGenUnit_" ColumnName="xGenUnit_" />
+          <ScalarProperty Name="xSupplier_" ColumnName="xSupplier_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mGoodsAndSupplierInfoes">
+      <EntityTypeMapping TypeName="ParkerModel1.mGoodsAndSupplierInfo">
+        <MappingFragment StoreEntitySet="mGoodsAndSupplierInfo">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xGoods_" ColumnName="xGoods_" />
+          <ScalarProperty Name="xCompany_" ColumnName="xCompany_" />
+          <ScalarProperty Name="xBrand" ColumnName="xBrand" />
+          <ScalarProperty Name="xOrderSupplyPeriod" ColumnName="xOrderSupplyPeriod" />
+          <ScalarProperty Name="xDeliveryDayNumber" ColumnName="xDeliveryDayNumber" />
+          <ScalarProperty Name="xSettlementType" ColumnName="xSettlementType" />
+          <ScalarProperty Name="xContractType" ColumnName="xContractType" />
+          <ScalarProperty Name="xLastSupplierGrade" ColumnName="xLastSupplierGrade" />
+          <ScalarProperty Name="xMinimumInventoryRequired" ColumnName="xMinimumInventoryRequired" />
+          <ScalarProperty Name="xSalesExpertName" ColumnName="xSalesExpertName" />
+          <ScalarProperty Name="xSalesExpertNameAlternatives" ColumnName="xSalesExpertNameAlternatives" />
+          <ScalarProperty Name="xSupplier_" ColumnName="xSupplier_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mGroups">
+      <EntityTypeMapping TypeName="ParkerModel1.mGroup">
+        <MappingFragment StoreEntitySet="mGroup">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xGroupName" ColumnName="xGroupName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mMarketerInformations">
+      <EntityTypeMapping TypeName="ParkerModel1.mMarketerInformation">
+        <MappingFragment StoreEntitySet="mMarketerInformation">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xDate" ColumnName="xDate" />
+          <ScalarProperty Name="xAddress" ColumnName="xAddress" />
+          <ScalarProperty Name="xGenUsage_" ColumnName="xGenUsage_" />
+          <ScalarProperty Name="xArea" ColumnName="xArea" />
+          <ScalarProperty Name="xFloorNumber" ColumnName="xFloorNumber" />
+          <ScalarProperty Name="xUnitNumber" ColumnName="xUnitNumber" />
+          <ScalarProperty Name="xConstractionState_" ColumnName="xConstractionState_" />
+          <ScalarProperty Name="xBuildingLicenseDate" ColumnName="xBuildingLicenseDate" />
+          <ScalarProperty Name="xBuildingOwner" ColumnName="xBuildingOwner" />
+          <ScalarProperty Name="xBuildingOwnerTel" ColumnName="xBuildingOwnerTel" />
+          <ScalarProperty Name="xContractor" ColumnName="xContractor" />
+          <ScalarProperty Name="xContractorTel" ColumnName="xContractorTel" />
+          <ScalarProperty Name="xSiteManeger" ColumnName="xSiteManeger" />
+          <ScalarProperty Name="xSiteManegerTel" ColumnName="xSiteManegerTel" />
+          <ScalarProperty Name="xGuardName" ColumnName="xGuardName" />
+          <ScalarProperty Name="xGuardTel" ColumnName="xGuardTel" />
+          <ScalarProperty Name="xInterViewer" ColumnName="xInterViewer" />
+          <ScalarProperty Name="xInterViewerJob" ColumnName="xInterViewerJob" />
+          <ScalarProperty Name="xInterViewerTel" ColumnName="xInterViewerTel" />
+          <ScalarProperty Name="xDesignService" ColumnName="xDesignService" />
+          <ScalarProperty Name="xBulidingTypeService_" ColumnName="xBulidingTypeService_" />
+          <ScalarProperty Name="xKitchen" ColumnName="xKitchen" />
+          <ScalarProperty Name="xWallCoverings" ColumnName="xWallCoverings" />
+          <ScalarProperty Name="xFloorCoverings" ColumnName="xFloorCoverings" />
+          <ScalarProperty Name="xFacilities" ColumnName="xFacilities" />
+          <ScalarProperty Name="xWoodenProducts" ColumnName="xWoodenProducts" />
+          <ScalarProperty Name="xStoneAndBricks" ColumnName="xStoneAndBricks" />
+          <ScalarProperty Name="xDecorationInside" ColumnName="xDecorationInside" />
+          <ScalarProperty Name="xConcrete" ColumnName="xConcrete" />
+          <ScalarProperty Name="xOtherService" ColumnName="xOtherService" />
+          <ScalarProperty Name="xComment" ColumnName="xComment" />
+          <ScalarProperty Name="xIntroductionFor" ColumnName="xIntroductionFor" />
+          <ScalarProperty Name="xIntroductionCode" ColumnName="xIntroductionCode" />
+          <ScalarProperty Name="xSupplier_" ColumnName="xSupplier_" />
+          <ScalarProperty Name="xRegisterDate" ColumnName="xRegisterDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mMarketerInformationFollowUps">
+      <EntityTypeMapping TypeName="ParkerModel1.mMarketerInformationFollowUp">
+        <MappingFragment StoreEntitySet="mMarketerInformationFollowUp">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xDate" ColumnName="xDate" />
+          <ScalarProperty Name="xTime" ColumnName="xTime" />
+          <ScalarProperty Name="xGenFollowUp_" ColumnName="xGenFollowUp_" />
+          <ScalarProperty Name="xComment" ColumnName="xComment" />
+          <ScalarProperty Name="xSupplier_" ColumnName="xSupplier_" />
+          <ScalarProperty Name="xMarketerInformation_" ColumnName="xMarketerInformation_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mMessages">
+      <EntityTypeMapping TypeName="ParkerModel1.mMessage">
+        <MappingFragment StoreEntitySet="mMessage">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xDate" ColumnName="xDate" />
+          <ScalarProperty Name="xUser_" ColumnName="xUser_" />
+          <ScalarProperty Name="xSubject" ColumnName="xSubject" />
+          <ScalarProperty Name="xContext" ColumnName="xContext" />
+          <ScalarProperty Name="xDateExpire" ColumnName="xDateExpire" />
+          <ScalarProperty Name="xSendTo_" ColumnName="xSendTo_" />
+          <ScalarProperty Name="xDateRead" ColumnName="xDateRead" />
+          <ScalarProperty Name="xDo" ColumnName="xDo" />
+          <ScalarProperty Name="xType" ColumnName="xType" />
+          <ScalarProperty Name="xLetterId" ColumnName="xLetterId" />
+          <ScalarProperty Name="xReplyFrom" ColumnName="xReplyFrom" />
+          <ScalarProperty Name="xCurrentTime" ColumnName="xCurrentTime" />
+          <ScalarProperty Name="xMessageFrom" ColumnName="xMessageFrom" />
+          <ScalarProperty Name="xElan" ColumnName="xElan" />
+          <ScalarProperty Name="xRdTlg" ColumnName="xRdTlg" />
+          <ScalarProperty Name="xFileId_" ColumnName="xFileId_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mObjects">
+      <EntityTypeMapping TypeName="ParkerModel1.mObject">
+        <MappingFragment StoreEntitySet="mObject">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xObjectname" ColumnName="xObjectname" />
+          <ScalarProperty Name="xObjectFarsiName" ColumnName="xObjectFarsiName" />
+          <ScalarProperty Name="xRegistringGroup_" ColumnName="xRegistringGroup_" />
+          <ScalarProperty Name="xType_" ColumnName="xType_" />
+          <ScalarProperty Name="xGroup_" ColumnName="xGroup_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mObjectGroups">
+      <EntityTypeMapping TypeName="ParkerModel1.mObjectGroup">
+        <MappingFragment StoreEntitySet="mObjectGroup">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xName" ColumnName="xName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mObjectTrees">
+      <EntityTypeMapping TypeName="ParkerModel1.mObjectTree">
+        <MappingFragment StoreEntitySet="mObjectTree">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xObject_" ColumnName="xObject_" />
+          <ScalarProperty Name="xParent_" ColumnName="xParent_" />
+          <ScalarProperty Name="xName" ColumnName="xName" />
+          <ScalarProperty Name="xOrder" ColumnName="xOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mObjectTypes">
+      <EntityTypeMapping TypeName="ParkerModel1.mObjectType">
+        <MappingFragment StoreEntitySet="mObjectType">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xObjectType" ColumnName="xObjectType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mPersonInfoes">
+      <EntityTypeMapping TypeName="ParkerModel1.mPersonInfo">
+        <MappingFragment StoreEntitySet="mPersonInfo">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xActive" ColumnName="xActive" />
+          <ScalarProperty Name="xPerID" ColumnName="xPerID" />
+          <ScalarProperty Name="xName" ColumnName="xName" />
+          <ScalarProperty Name="xFamily" ColumnName="xFamily" />
+          <ScalarProperty Name="xSection_" ColumnName="xSection_" />
+          <ScalarProperty Name="xPost" ColumnName="xPost" />
+          <ScalarProperty Name="xMob" ColumnName="xMob" />
+          <ScalarProperty Name="xBirthDay" ColumnName="xBirthDay" />
+          <ScalarProperty Name="xDateEmployeement" ColumnName="xDateEmployeement" />
+          <ScalarProperty Name="xEducation_" ColumnName="xEducation_" />
+          <ScalarProperty Name="xFatherName" ColumnName="xFatherName" />
+          <ScalarProperty Name="xSex_" ColumnName="xSex_" />
+          <ScalarProperty Name="xNationalCode" ColumnName="xNationalCode" />
+          <ScalarProperty Name="xAddress" ColumnName="xAddress" />
+          <ScalarProperty Name="xTel" ColumnName="xTel" />
+          <ScalarProperty Name="xIdentity" ColumnName="xIdentity" />
+          <ScalarProperty Name="xEmail" ColumnName="xEmail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mPoems">
+      <EntityTypeMapping TypeName="ParkerModel1.mPoem">
+        <MappingFragment StoreEntitySet="mPoem">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xText" ColumnName="xText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mQuestions">
+      <EntityTypeMapping TypeName="ParkerModel1.mQuestion">
+        <MappingFragment StoreEntitySet="mQuestion">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xQuestion" ColumnName="xQuestion" />
+          <ScalarProperty Name="xGenType_" ColumnName="xGenType_" />
+          <ScalarProperty Name="xGenGroupLevel1_" ColumnName="xGenGroupLevel1_" />
+          <ScalarProperty Name="xGenGroupLevel2_" ColumnName="xGenGroupLevel2_" />
+          <ScalarProperty Name="xPublic" ColumnName="xPublic" />
+          <ScalarProperty Name="xOrder" ColumnName="xOrder" />
+          <ScalarProperty Name="xActive" ColumnName="xActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mQuestionItems">
+      <EntityTypeMapping TypeName="ParkerModel1.mQuestionItem">
+        <MappingFragment StoreEntitySet="mQuestionItem">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xQuestionItem" ColumnName="xQuestionItem" />
+          <ScalarProperty Name="xQuestion_" ColumnName="xQuestion_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mRebuildings">
+      <EntityTypeMapping TypeName="ParkerModel1.mRebuilding">
+        <MappingFragment StoreEntitySet="mRebuilding">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xDate" ColumnName="xDate" />
+          <ScalarProperty Name="xCustomer_" ColumnName="xCustomer_" />
+          <ScalarProperty Name="xGenUsageType_" ColumnName="xGenUsageType_" />
+          <ScalarProperty Name="xBuldingStatus_" ColumnName="xBuldingStatus_" />
+          <ScalarProperty Name="xArea" ColumnName="xArea" />
+          <ScalarProperty Name="xZone" ColumnName="xZone" />
+          <ScalarProperty Name="xAddress" ColumnName="xAddress" />
+          <ScalarProperty Name="xGenPosition_" ColumnName="xGenPosition_" />
+          <ScalarProperty Name="xlength" ColumnName="xlength" />
+          <ScalarProperty Name="xWidth" ColumnName="xWidth" />
+          <ScalarProperty Name="xGenContractType_" ColumnName="xGenContractType_" />
+          <ScalarProperty Name="xLicenseRebuilding" ColumnName="xLicenseRebuilding" />
+          <ScalarProperty Name="xLicenseRebuildingComment" ColumnName="xLicenseRebuildingComment" />
+          <ScalarProperty Name="xProductionLicense" ColumnName="xProductionLicense" />
+          <ScalarProperty Name="xProductionLicenseComment" ColumnName="xProductionLicenseComment" />
+          <ScalarProperty Name="xBuildingUnitsNumber" ColumnName="xBuildingUnitsNumber" />
+          <ScalarProperty Name="xFloorsNumber" ColumnName="xFloorsNumber" />
+          <ScalarProperty Name="xBuildingUnitsNumberRequest" ColumnName="xBuildingUnitsNumberRequest" />
+          <ScalarProperty Name="xUnitID" ColumnName="xUnitID" />
+          <ScalarProperty Name="xUnitArea" ColumnName="xUnitArea" />
+          <ScalarProperty Name="xAreaRebuilding" ColumnName="xAreaRebuilding" />
+          <ScalarProperty Name="xBuildingYear" ColumnName="xBuildingYear" />
+          <ScalarProperty Name="xBedroomsNumber" ColumnName="xBedroomsNumber" />
+          <ScalarProperty Name="xBedroomsNumber_Ch" ColumnName="xBedroomsNumber_Ch" />
+          <ScalarProperty Name="xBedroomsNumber_Crr" ColumnName="xBedroomsNumber_Crr" />
+          <ScalarProperty Name="xBedroomsNumber_CkM" ColumnName="xBedroomsNumber_CkM" />
+          <ScalarProperty Name="xBedroomsNumber_Remark" ColumnName="xBedroomsNumber_Remark" />
+          <ScalarProperty Name="xBathroomNumber" ColumnName="xBathroomNumber" />
+          <ScalarProperty Name="xBathroomNumber_Ch" ColumnName="xBathroomNumber_Ch" />
+          <ScalarProperty Name="xBathroomNumber_Crr" ColumnName="xBathroomNumber_Crr" />
+          <ScalarProperty Name="xBathroomNumber_CkM" ColumnName="xBathroomNumber_CkM" />
+          <ScalarProperty Name="xBathroomNumber_Remark" ColumnName="xBathroomNumber_Remark" />
+          <ScalarProperty Name="xToiletNumber" ColumnName="xToiletNumber" />
+          <ScalarProperty Name="xToiletNumber_Ch" ColumnName="xToiletNumber_Ch" />
+          <ScalarProperty Name="xToiletNumber_Crr" ColumnName="xToiletNumber_Crr" />
+          <ScalarProperty Name="xToiletNumber_CkM" ColumnName="xToiletNumber_CkM" />
+          <ScalarProperty Name="xToiletNumber_Remark" ColumnName="xToiletNumber_Remark" />
+          <ScalarProperty Name="xGenRoof_" ColumnName="xGenRoof_" />
+          <ScalarProperty Name="xGenRoof_Ch_" ColumnName="xGenRoof_Ch_" />
+          <ScalarProperty Name="xGenRoof_Crr" ColumnName="xGenRoof_Crr" />
+          <ScalarProperty Name="xGenRoof_CkM" ColumnName="xGenRoof_CkM" />
+          <ScalarProperty Name="xGenRoof_Remark" ColumnName="xGenRoof_Remark" />
+          <ScalarProperty Name="xGenBuildingSkeleton_" ColumnName="xGenBuildingSkeleton_" />
+          <ScalarProperty Name="xGenBuildingSkeleton_Ch_" ColumnName="xGenBuildingSkeleton_Ch_" />
+          <ScalarProperty Name="xGenBuildingSkeleton_Crr" ColumnName="xGenBuildingSkeleton_Crr" />
+          <ScalarProperty Name="xGenBuildingSkeleton_CkM" ColumnName="xGenBuildingSkeleton_CkM" />
+          <ScalarProperty Name="xGenBuildingSkeleton_Remark" ColumnName="xGenBuildingSkeleton_Remark" />
+          <ScalarProperty Name="xGenFoundation_" ColumnName="xGenFoundation_" />
+          <ScalarProperty Name="xGenFoundation_Ch_" ColumnName="xGenFoundation_Ch_" />
+          <ScalarProperty Name="xGenFoundation_Crr" ColumnName="xGenFoundation_Crr" />
+          <ScalarProperty Name="xGenFoundation_CkM" ColumnName="xGenFoundation_CkM" />
+          <ScalarProperty Name="xGenFoundation_Remark" ColumnName="xGenFoundation_Remark" />
+          <ScalarProperty Name="xGenWall_" ColumnName="xGenWall_" />
+          <ScalarProperty Name="xGenWall_Ch_" ColumnName="xGenWall_Ch_" />
+          <ScalarProperty Name="xGenWall_Crr" ColumnName="xGenWall_Crr" />
+          <ScalarProperty Name="xGenWall_CkM" ColumnName="xGenWall_CkM" />
+          <ScalarProperty Name="xGenWall_Remark" ColumnName="xGenWall_Remark" />
+          <ScalarProperty Name="xGenWaterPiping_" ColumnName="xGenWaterPiping_" />
+          <ScalarProperty Name="xGenWaterPiping_Ch_" ColumnName="xGenWaterPiping_Ch_" />
+          <ScalarProperty Name="xGenWaterPiping_Crr" ColumnName="xGenWaterPiping_Crr" />
+          <ScalarProperty Name="xGenWaterPiping_CkM" ColumnName="xGenWaterPiping_CkM" />
+          <ScalarProperty Name="xGenWaterPiping_Remark" ColumnName="xGenWaterPiping_Remark" />
+          <ScalarProperty Name="xGenGasPiping_" ColumnName="xGenGasPiping_" />
+          <ScalarProperty Name="xGenGasPiping_Ch_" ColumnName="xGenGasPiping_Ch_" />
+          <ScalarProperty Name="xGenGasPiping_Crr" ColumnName="xGenGasPiping_Crr" />
+          <ScalarProperty Name="xGenGasPiping_CkM" ColumnName="xGenGasPiping_CkM" />
+          <ScalarProperty Name="xGenGasPiping_Remark" ColumnName="xGenGasPiping_Remark" />
+          <ScalarProperty Name="xGenCoolingSystem_" ColumnName="xGenCoolingSystem_" />
+          <ScalarProperty Name="xGenCoolingSystem_Ch_" ColumnName="xGenCoolingSystem_Ch_" />
+          <ScalarProperty Name="xGenCoolingSystem_Crr" ColumnName="xGenCoolingSystem_Crr" />
+          <ScalarProperty Name="xGenCoolingSystem_CkM" ColumnName="xGenCoolingSystem_CkM" />
+          <ScalarProperty Name="xGenCoolingSystem_Remark" ColumnName="xGenCoolingSystem_Remark" />
+          <ScalarProperty Name="xGenHeatingSystem_" ColumnName="xGenHeatingSystem_" />
+          <ScalarProperty Name="xGenHeatingSystem_Ch_" ColumnName="xGenHeatingSystem_Ch_" />
+          <ScalarProperty Name="xGenHeatingSystem_Crr" ColumnName="xGenHeatingSystem_Crr" />
+          <ScalarProperty Name="xGenHeatingSystem_CkM" ColumnName="xGenHeatingSystem_CkM" />
+          <ScalarProperty Name="xGenHeatingSystem_Remark" ColumnName="xGenHeatingSystem_Remark" />
+          <ScalarProperty Name="xGenFlooring_" ColumnName="xGenFlooring_" />
+          <ScalarProperty Name="xGenFlooring_Ch_" ColumnName="xGenFlooring_Ch_" />
+          <ScalarProperty Name="xGenFlooring_Crr" ColumnName="xGenFlooring_Crr" />
+          <ScalarProperty Name="xGenFlooring_CkM" ColumnName="xGenFlooring_CkM" />
+          <ScalarProperty Name="xGenFlooring_Remark" ColumnName="xGenFlooring_Remark" />
+          <ScalarProperty Name="xGenKitchenWall_" ColumnName="xGenKitchenWall_" />
+          <ScalarProperty Name="xGenKitchenWall_Ch_" ColumnName="xGenKitchenWall_Ch_" />
+          <ScalarProperty Name="xGenKitchenWall_Crr" ColumnName="xGenKitchenWall_Crr" />
+          <ScalarProperty Name="xGenKitchenWall_CkM" ColumnName="xGenKitchenWall_CkM" />
+          <ScalarProperty Name="xGenKitchenWall_Remark" ColumnName="xGenKitchenWall_Remark" />
+          <ScalarProperty Name="xGenKitchenFloor_" ColumnName="xGenKitchenFloor_" />
+          <ScalarProperty Name="xGenKitchenFloor_Ch_" ColumnName="xGenKitchenFloor_Ch_" />
+          <ScalarProperty Name="xGenKitchenFloor_Crr" ColumnName="xGenKitchenFloor_Crr" />
+          <ScalarProperty Name="xGenKitchenFloor_CkM" ColumnName="xGenKitchenFloor_CkM" />
+          <ScalarProperty Name="xGenKitchenFloor_Remark" ColumnName="xGenKitchenFloor_Remark" />
+          <ScalarProperty Name="xGenKitchenCupboards_" ColumnName="xGenKitchenCupboards_" />
+          <ScalarProperty Name="xGenKitchenCupboards_Ch_" ColumnName="xGenKitchenCupboards_Ch_" />
+          <ScalarProperty Name="xGenKitchenCupboards_Crr" ColumnName="xGenKitchenCupboards_Crr" />
+          <ScalarProperty Name="xGenKitchenCupboards_CkM" ColumnName="xGenKitchenCupboards_CkM" />
+          <ScalarProperty Name="xGenKitchenCupboards_Remark" ColumnName="xGenKitchenCupboards_Remark" />
+          <ScalarProperty Name="xGenBathroomPiping_" ColumnName="xGenBathroomPiping_" />
+          <ScalarProperty Name="xGenBathroomPiping_Ch_" ColumnName="xGenBathroomPiping_Ch_" />
+          <ScalarProperty Name="xGenBathroomPiping_Crr" ColumnName="xGenBathroomPiping_Crr" />
+          <ScalarProperty Name="xGenBathroomPiping_CkM" ColumnName="xGenBathroomPiping_CkM" />
+          <ScalarProperty Name="xGenBathroomPiping_Remark" ColumnName="xGenBathroomPiping_Remark" />
+          <ScalarProperty Name="xBathtub" ColumnName="xBathtub" />
+          <ScalarProperty Name="xBathtub_Ch" ColumnName="xBathtub_Ch" />
+          <ScalarProperty Name="xBathtub_Crr" ColumnName="xBathtub_Crr" />
+          <ScalarProperty Name="xBathtub_CkM" ColumnName="xBathtub_CkM" />
+          <ScalarProperty Name="xBathtub_Remark" ColumnName="xBathtub_Remark" />
+          <ScalarProperty Name="xBathTile" ColumnName="xBathTile" />
+          <ScalarProperty Name="xBathTile_Ch" ColumnName="xBathTile_Ch" />
+          <ScalarProperty Name="xBathTile_Crr" ColumnName="xBathTile_Crr" />
+          <ScalarProperty Name="xBathTile_CkM" ColumnName="xBathTile_CkM" />
+          <ScalarProperty Name="xBathTile_Remark" ColumnName="xBathTile_Remark" />
+          <ScalarProperty Name="xGenAdaptationMap_" ColumnName="xGenAdaptationMap_" />
+          <ScalarProperty Name="xGenPrepareCurrentSituationMaps_" ColumnName="xGenPrepareCurrentSituationMaps_" />
+          <ScalarProperty Name="xGenAmountDestruction_" ColumnName="xGenAmountDestruction_" />
+          <ScalarProperty Name="xWeightDestruction" ColumnName="xWeightDestruction" />
+          <ScalarProperty Name="xGenTransportDestructionMetod_" ColumnName="xGenTransportDestructionMetod_" />
+          <ScalarProperty Name="xGenAccessDestructionMetod_" ColumnName="xGenAccessDestructionMetod_" />
+          <ScalarProperty Name="xNeighborUnitCount" ColumnName="xNeighborUnitCount" />
+          <ScalarProperty Name="xNeighborsLivingNumber" ColumnName="xNeighborsLivingNumber" />
+          <ScalarProperty Name="xRiskNeighborsComplaints" ColumnName="xRiskNeighborsComplaints" />
+          <ScalarProperty Name="xRiskMunicipalityPrevent" ColumnName="xRiskMunicipalityPrevent" />
+          <ScalarProperty Name="xRiskForcedDestruction" ColumnName="xRiskForcedDestruction" />
+          <ScalarProperty Name="xRiskDamageBuilding" ColumnName="xRiskDamageBuilding" />
+          <ScalarProperty Name="xDestructionDurationDay" ColumnName="xDestructionDurationDay" />
+          <ScalarProperty Name="xDestructionRebuildingDay" ColumnName="xDestructionRebuildingDay" />
+          <ScalarProperty Name="xGenReasonsRebuilding_" ColumnName="xGenReasonsRebuilding_" />
+          <ScalarProperty Name="xSupplier_" ColumnName="xSupplier_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mRenovations">
+      <EntityTypeMapping TypeName="ParkerModel1.mRenovation">
+        <MappingFragment StoreEntitySet="mRenovation">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xDate" ColumnName="xDate" />
+          <ScalarProperty Name="xCustomer_" ColumnName="xCustomer_" />
+          <ScalarProperty Name="xGenUsageType_" ColumnName="xGenUsageType_" />
+          <ScalarProperty Name="xBuildingStatus_" ColumnName="xBuildingStatus_" />
+          <ScalarProperty Name="xArea" ColumnName="xArea" />
+          <ScalarProperty Name="xZone" ColumnName="xZone" />
+          <ScalarProperty Name="xAddress" ColumnName="xAddress" />
+          <ScalarProperty Name="xGenPosition_" ColumnName="xGenPosition_" />
+          <ScalarProperty Name="xlength" ColumnName="xlength" />
+          <ScalarProperty Name="xWidth" ColumnName="xWidth" />
+          <ScalarProperty Name="xGenContractType_" ColumnName="xGenContractType_" />
+          <ScalarProperty Name="xLicenseRenovation" ColumnName="xLicenseRenovation" />
+          <ScalarProperty Name="xLicenseRenovationComment" ColumnName="xLicenseRenovationComment" />
+          <ScalarProperty Name="xProductionLicense" ColumnName="xProductionLicense" />
+          <ScalarProperty Name="xProductionLicenseComment" ColumnName="xProductionLicenseComment" />
+          <ScalarProperty Name="xFloorsNumber" ColumnName="xFloorsNumber" />
+          <ScalarProperty Name="xFloorsNumber_Ckm" ColumnName="xFloorsNumber_Ckm" />
+          <ScalarProperty Name="xFloorsNumber_Remark" ColumnName="xFloorsNumber_Remark" />
+          <ScalarProperty Name="xBuildingUnitsNumberRequest" ColumnName="xBuildingUnitsNumberRequest" />
+          <ScalarProperty Name="xBuildingUnitsNumberRequest_Ckm" ColumnName="xBuildingUnitsNumberRequest_Ckm" />
+          <ScalarProperty Name="xBuildingUnitsNumberRequest_Remark" ColumnName="xBuildingUnitsNumberRequest_Remark" />
+          <ScalarProperty Name="xParkingNumber" ColumnName="xParkingNumber" />
+          <ScalarProperty Name="xParkingNumber_CkM" ColumnName="xParkingNumber_CkM" />
+          <ScalarProperty Name="xParkingNumber_Remark" ColumnName="xParkingNumber_Remark" />
+          <ScalarProperty Name="xStorageNumber" ColumnName="xStorageNumber" />
+          <ScalarProperty Name="xStorageNumber_CkM" ColumnName="xStorageNumber_CkM" />
+          <ScalarProperty Name="xStorageNumber_Remark" ColumnName="xStorageNumber_Remark" />
+          <ScalarProperty Name="xRoofGarden" ColumnName="xRoofGarden" />
+          <ScalarProperty Name="xRoofGarden_CkM" ColumnName="xRoofGarden_CkM" />
+          <ScalarProperty Name="xRoofGarden_Remark" ColumnName="xRoofGarden_Remark" />
+          <ScalarProperty Name="xWeightDestruction" ColumnName="xWeightDestruction" />
+          <ScalarProperty Name="xGenTransportDestructionMetod_" ColumnName="xGenTransportDestructionMetod_" />
+          <ScalarProperty Name="xGenAccessDestructionMetod_" ColumnName="xGenAccessDestructionMetod_" />
+          <ScalarProperty Name="xNeighborUnitCount" ColumnName="xNeighborUnitCount" />
+          <ScalarProperty Name="xNeighborsLivingNumber" ColumnName="xNeighborsLivingNumber" />
+          <ScalarProperty Name="xRiskNeighborsComplaints" ColumnName="xRiskNeighborsComplaints" />
+          <ScalarProperty Name="xRiskMunicipalityPrevent" ColumnName="xRiskMunicipalityPrevent" />
+          <ScalarProperty Name="xRiskDamageBuildingNeighbors" ColumnName="xRiskDamageBuildingNeighbors" />
+          <ScalarProperty Name="xDestructionDurationDay" ColumnName="xDestructionDurationDay" />
+          <ScalarProperty Name="xGenReasonsRenovation_" ColumnName="xGenReasonsRenovation_" />
+          <ScalarProperty Name="xSupplier_" ColumnName="xSupplier_" />
+          <ScalarProperty Name="xComment" ColumnName="xComment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mRenovationFloors">
+      <EntityTypeMapping TypeName="ParkerModel1.mRenovationFloor">
+        <MappingFragment StoreEntitySet="mRenovationFloor">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xRenovationProject_" ColumnName="xRenovationProject_" />
+          <ScalarProperty Name="xUnitNumber" ColumnName="xUnitNumber" />
+          <ScalarProperty Name="xGenUnitType_" ColumnName="xGenUnitType_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mRenovationProjects">
+      <EntityTypeMapping TypeName="ParkerModel1.mRenovationProject">
+        <MappingFragment StoreEntitySet="mRenovationProject">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xDate" ColumnName="xDate" />
+          <ScalarProperty Name="xCustomer_" ColumnName="xCustomer_" />
+          <ScalarProperty Name="xGenQUESTLEVL1_" ColumnName="xGenQUESTLEVL1_" />
+          <ScalarProperty Name="xAddress" ColumnName="xAddress" />
+          <ScalarProperty Name="xComment" ColumnName="xComment" />
+          <ScalarProperty Name="xSupplier_" ColumnName="xSupplier_" />
+          <ScalarProperty Name="xGenStatus_" ColumnName="xGenStatus_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mRenovationProjectAnswers">
+      <EntityTypeMapping TypeName="ParkerModel1.mRenovationProjectAnswer">
+        <MappingFragment StoreEntitySet="mRenovationProjectAnswer">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xRenovationFloor_" ColumnName="xRenovationFloor_" />
+          <ScalarProperty Name="xQuestion_" ColumnName="xQuestion_" />
+          <ScalarProperty Name="xQuestionItem_" ColumnName="xQuestionItem_" />
+          <ScalarProperty Name="xQestionContext" ColumnName="xQestionContext" />
+          <ScalarProperty Name="xGenStatus_" ColumnName="xGenStatus_" />
+          <ScalarProperty Name="xComment" ColumnName="xComment" />
+          <ScalarProperty Name="xSupplier_" ColumnName="xSupplier_" />
+          <ScalarProperty Name="xDate" ColumnName="xDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mRenovationUnits">
+      <EntityTypeMapping TypeName="ParkerModel1.mRenovationUnit">
+        <MappingFragment StoreEntitySet="mRenovationUnit">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xRenovation_" ColumnName="xRenovation_" />
+          <ScalarProperty Name="xUnitNumber" ColumnName="xUnitNumber" />
+          <ScalarProperty Name="xArea" ColumnName="xArea" />
+          <ScalarProperty Name="xLength" ColumnName="xLength" />
+          <ScalarProperty Name="xWidth" ColumnName="xWidth" />
+          <ScalarProperty Name="xGenCoolingSystem_" ColumnName="xGenCoolingSystem_" />
+          <ScalarProperty Name="xGenCoolingSystem_CkM" ColumnName="xGenCoolingSystem_CkM" />
+          <ScalarProperty Name="xGenCoolingSystem_Remark" ColumnName="xGenCoolingSystem_Remark" />
+          <ScalarProperty Name="xGenHeatingSystem_" ColumnName="xGenHeatingSystem_" />
+          <ScalarProperty Name="xGenHeatingSystem_CkM" ColumnName="xGenHeatingSystem_CkM" />
+          <ScalarProperty Name="xGenHeatingSystem_Remark" ColumnName="xGenHeatingSystem_Remark" />
+          <ScalarProperty Name="xBedroomsNumber" ColumnName="xBedroomsNumber" />
+          <ScalarProperty Name="xBedroomsNumber_CkM" ColumnName="xBedroomsNumber_CkM" />
+          <ScalarProperty Name="xBedroomsNumber_Remark" ColumnName="xBedroomsNumber_Remark" />
+          <ScalarProperty Name="xBathroomNumber" ColumnName="xBathroomNumber" />
+          <ScalarProperty Name="xBathroomNumber_CkM" ColumnName="xBathroomNumber_CkM" />
+          <ScalarProperty Name="xBathroomNumber_Remark" ColumnName="xBathroomNumber_Remark" />
+          <ScalarProperty Name="xToiletNumber" ColumnName="xToiletNumber" />
+          <ScalarProperty Name="xToiletNumber_CkM" ColumnName="xToiletNumber_CkM" />
+          <ScalarProperty Name="xToiletNumber_Remark" ColumnName="xToiletNumber_Remark" />
+          <ScalarProperty Name="xGenFlooring_" ColumnName="xGenFlooring_" />
+          <ScalarProperty Name="xGenFlooring_CkM" ColumnName="xGenFlooring_CkM" />
+          <ScalarProperty Name="xGenFlooring_Remark" ColumnName="xGenFlooring_Remark" />
+          <ScalarProperty Name="xGenKitchenCupboards_" ColumnName="xGenKitchenCupboards_" />
+          <ScalarProperty Name="xGenKitchenCupboards_CkM" ColumnName="xGenKitchenCupboards_CkM" />
+          <ScalarProperty Name="xGenKitchenCupboards_Remark" ColumnName="xGenKitchenCupboards_Remark" />
+          <ScalarProperty Name="xBathtub" ColumnName="xBathtub" />
+          <ScalarProperty Name="xBathtub_CkM" ColumnName="xBathtub_CkM" />
+          <ScalarProperty Name="xBathtub_Remark" ColumnName="xBathtub_Remark" />
+          <ScalarProperty Name="xJacuzzi" ColumnName="xJacuzzi" />
+          <ScalarProperty Name="xJacuzzi_Ckm" ColumnName="xJacuzzi_Ckm" />
+          <ScalarProperty Name="xJacuzzi_Remark" ColumnName="xJacuzzi_Remark" />
+          <ScalarProperty Name="xSauna" ColumnName="xSauna" />
+          <ScalarProperty Name="xSauna_Ckm" ColumnName="xSauna_Ckm" />
+          <ScalarProperty Name="xSauna_Remark" ColumnName="xSauna_Remark" />
+          <ScalarProperty Name="xComment" ColumnName="xComment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mShifts">
+      <EntityTypeMapping TypeName="ParkerModel1.mShift">
+        <MappingFragment StoreEntitySet="mShift">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xShiftName" ColumnName="xShiftName" />
+          <ScalarProperty Name="xShiftSuperviser" ColumnName="xShiftSuperviser" />
+          <ScalarProperty Name="xShiftInspector" ColumnName="xShiftInspector" />
+          <ScalarProperty Name="xFernesSuperviser" ColumnName="xFernesSuperviser" />
+          <ScalarProperty Name="xSandOperator" ColumnName="xSandOperator" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mSMSContexts">
+      <EntityTypeMapping TypeName="ParkerModel1.mSMSContext">
+        <MappingFragment StoreEntitySet="mSMSContext">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xSubjectSMS" ColumnName="xSubjectSMS" />
+          <ScalarProperty Name="xSMS" ColumnName="xSMS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mSMSLogs">
+      <EntityTypeMapping TypeName="ParkerModel1.mSMSLog">
+        <MappingFragment StoreEntitySet="mSMSLog">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xDate" ColumnName="xDate" />
+          <ScalarProperty Name="xTime" ColumnName="xTime" />
+          <ScalarProperty Name="xUser_" ColumnName="xUser_" />
+          <ScalarProperty Name="xContext" ColumnName="xContext" />
+          <ScalarProperty Name="xMobile" ColumnName="xMobile" />
+          <ScalarProperty Name="xForm" ColumnName="xForm" />
+          <ScalarProperty Name="xResult" ColumnName="xResult" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mStates">
+      <EntityTypeMapping TypeName="ParkerModel1.mState">
+        <MappingFragment StoreEntitySet="mState">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xName" ColumnName="xName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mStatementRefers">
+      <EntityTypeMapping TypeName="ParkerModel1.mStatementRefer">
+        <MappingFragment StoreEntitySet="mStatementRefer">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xConsultant_" ColumnName="xConsultant_" />
+          <ScalarProperty Name="xFileNumber" ColumnName="xFileNumber" />
+          <ScalarProperty Name="xFileDate" ColumnName="xFileDate" />
+          <ScalarProperty Name="xBuildingOwnerName" ColumnName="xBuildingOwnerName" />
+          <ScalarProperty Name="xBuildingOwnerTel" ColumnName="xBuildingOwnerTel" />
+          <ScalarProperty Name="xBuildingAddress" ColumnName="xBuildingAddress" />
+          <ScalarProperty Name="xFailureConcludeContract" ColumnName="xFailureConcludeContract" />
+          <ScalarProperty Name="xFollowUpDate" ColumnName="xFollowUpDate" />
+          <ScalarProperty Name="xFollowUpType" ColumnName="xFollowUpType" />
+          <ScalarProperty Name="xComment" ColumnName="xComment" />
+          <ScalarProperty Name="xGenFollowUpFinalResult_" ColumnName="xGenFollowUpFinalResult_" />
+          <ScalarProperty Name="xFollowUpFinalResult" ColumnName="xFollowUpFinalResult" />
+          <ScalarProperty Name="xSuggestedItems" ColumnName="xSuggestedItems" />
+          <ScalarProperty Name="xSoldItems" ColumnName="xSoldItems" />
+          <ScalarProperty Name="xContractCost" ColumnName="xContractCost" />
+          <ScalarProperty Name="xConsultantCommission" ColumnName="xConsultantCommission" />
+          <ScalarProperty Name="xReferFinanceConfirm" ColumnName="xReferFinanceConfirm" />
+          <ScalarProperty Name="xSupplierReferFinanceConfirm_" ColumnName="xSupplierReferFinanceConfirm_" />
+          <ScalarProperty Name="xFollowUpComment" ColumnName="xFollowUpComment" />
+          <ScalarProperty Name="xSendMessage" ColumnName="xSendMessage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mStatementReferFollowUps">
+      <EntityTypeMapping TypeName="ParkerModel1.mStatementReferFollowUp">
+        <MappingFragment StoreEntitySet="mStatementReferFollowUp">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xDate" ColumnName="xDate" />
+          <ScalarProperty Name="xTime" ColumnName="xTime" />
+          <ScalarProperty Name="xGenFollowUp_" ColumnName="xGenFollowUp_" />
+          <ScalarProperty Name="xAction" ColumnName="xAction" />
+          <ScalarProperty Name="xConstructionStage" ColumnName="xConstructionStage" />
+          <ScalarProperty Name="xMasterFollowUp" ColumnName="xMasterFollowUp" />
+          <ScalarProperty Name="xSupplier_" ColumnName="xSupplier_" />
+          <ScalarProperty Name="xStatementRefer_" ColumnName="xStatementRefer_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mStatementRentalIncomes">
+      <EntityTypeMapping TypeName="ParkerModel1.mStatementRentalIncome">
+        <MappingFragment StoreEntitySet="mStatementRentalIncome">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xContractDate" ColumnName="xContractDate" />
+          <ScalarProperty Name="xContractNumber" ColumnName="xContractNumber" />
+          <ScalarProperty Name="xGenBuildingType_" ColumnName="xGenBuildingType_" />
+          <ScalarProperty Name="xBuildingAddress" ColumnName="xBuildingAddress" />
+          <ScalarProperty Name="xMortgage" ColumnName="xMortgage" />
+          <ScalarProperty Name="xRent" ColumnName="xRent" />
+          <ScalarProperty Name="xGuildCommission" ColumnName="xGuildCommission" />
+          <ScalarProperty Name="xContractConsultant" ColumnName="xContractConsultant" />
+          <ScalarProperty Name="xContractManager" ColumnName="xContractManager" />
+          <ScalarProperty Name="xLessorName" ColumnName="xLessorName" />
+          <ScalarProperty Name="xLessorAddress" ColumnName="xLessorAddress" />
+          <ScalarProperty Name="xLessorNationalCode" ColumnName="xLessorNationalCode" />
+          <ScalarProperty Name="xLessorTel" ColumnName="xLessorTel" />
+          <ScalarProperty Name="xLessorEarnestCommission" ColumnName="xLessorEarnestCommission" />
+          <ScalarProperty Name="xLessorCommission" ColumnName="xLessorCommission" />
+          <ScalarProperty Name="xTenantName" ColumnName="xTenantName" />
+          <ScalarProperty Name="xTenantAddress" ColumnName="xTenantAddress" />
+          <ScalarProperty Name="xTenantNationalCode" ColumnName="xTenantNationalCode" />
+          <ScalarProperty Name="xTenantTel" ColumnName="xTenantTel" />
+          <ScalarProperty Name="xTenantEarnestCommission" ColumnName="xTenantEarnestCommission" />
+          <ScalarProperty Name="xTenantCommission" ColumnName="xTenantCommission" />
+          <ScalarProperty Name="xHomeDeliveryDate" ColumnName="xHomeDeliveryDate" />
+          <ScalarProperty Name="xContractEndDate" ColumnName="xContractEndDate" />
+          <ScalarProperty Name="xFinancialApprove" ColumnName="xFinancialApprove" />
+          <ScalarProperty Name="xFinancialApprove_" ColumnName="xFinancialApprove_" />
+          <ScalarProperty Name="xSupplier_" ColumnName="xSupplier_" />
+          <ScalarProperty Name="xComment" ColumnName="xComment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mStatementRentalIncomeSurveys">
+      <EntityTypeMapping TypeName="ParkerModel1.mStatementRentalIncomeSurvey">
+        <MappingFragment StoreEntitySet="mStatementRentalIncomeSurvey">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xStatementRentalIncome_" ColumnName="xStatementRentalIncome_" />
+          <ScalarProperty Name="xGenSurveyForWho_" ColumnName="xGenSurveyForWho_" />
+          <ScalarProperty Name="xAnswerNumber" ColumnName="xAnswerNumber" />
+          <ScalarProperty Name="xQuestion" ColumnName="xQuestion" />
+          <ScalarProperty Name="xAnswerContext" ColumnName="xAnswerContext" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mStatementSaleIncomes">
+      <EntityTypeMapping TypeName="ParkerModel1.mStatementSaleIncome">
+        <MappingFragment StoreEntitySet="mStatementSaleIncome">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xContractDate" ColumnName="xContractDate" />
+          <ScalarProperty Name="xContractNumber" ColumnName="xContractNumber" />
+          <ScalarProperty Name="xGenBuildingType_" ColumnName="xGenBuildingType_" />
+          <ScalarProperty Name="xBuildingAddress" ColumnName="xBuildingAddress" />
+          <ScalarProperty Name="xPrice" ColumnName="xPrice" />
+          <ScalarProperty Name="xGuildCommission" ColumnName="xGuildCommission" />
+          <ScalarProperty Name="xContractConsultant" ColumnName="xContractConsultant" />
+          <ScalarProperty Name="xContractManager" ColumnName="xContractManager" />
+          <ScalarProperty Name="xSellerName" ColumnName="xSellerName" />
+          <ScalarProperty Name="xSellerAddress" ColumnName="xSellerAddress" />
+          <ScalarProperty Name="xSellerNationalCode" ColumnName="xSellerNationalCode" />
+          <ScalarProperty Name="xSellerTel" ColumnName="xSellerTel" />
+          <ScalarProperty Name="xSellerEarnestCommission" ColumnName="xSellerEarnestCommission" />
+          <ScalarProperty Name="xSellerCommission" ColumnName="xSellerCommission" />
+          <ScalarProperty Name="xBuyerName" ColumnName="xBuyerName" />
+          <ScalarProperty Name="xBuyerAddress" ColumnName="xBuyerAddress" />
+          <ScalarProperty Name="xBuyerNationalCode" ColumnName="xBuyerNationalCode" />
+          <ScalarProperty Name="xBuyerTel" ColumnName="xBuyerTel" />
+          <ScalarProperty Name="xBuyerEarnestCommission" ColumnName="xBuyerEarnestCommission" />
+          <ScalarProperty Name="xBuyerCommission" ColumnName="xBuyerCommission" />
+          <ScalarProperty Name="xFinancialApprove" ColumnName="xFinancialApprove" />
+          <ScalarProperty Name="xFinancialApprove_" ColumnName="xFinancialApprove_" />
+          <ScalarProperty Name="xComment" ColumnName="xComment" />
+          <ScalarProperty Name="xHomeDeliveryDate" ColumnName="xHomeDeliveryDate" />
+          <ScalarProperty Name="xDocumentTransferDate" ColumnName="xDocumentTransferDate" />
+          <ScalarProperty Name="xSupplier_" ColumnName="xSupplier_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mStatementSaleIncomeSurveys">
+      <EntityTypeMapping TypeName="ParkerModel1.mStatementSaleIncomeSurvey">
+        <MappingFragment StoreEntitySet="mStatementSaleIncomeSurvey">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xStatementSaleIncome_" ColumnName="xStatementSaleIncome_" />
+          <ScalarProperty Name="xGenSurveyForWho_" ColumnName="xGenSurveyForWho_" />
+          <ScalarProperty Name="xAnswerNumber" ColumnName="xAnswerNumber" />
+          <ScalarProperty Name="xQuestion" ColumnName="xQuestion" />
+          <ScalarProperty Name="xAnswerContext" ColumnName="xAnswerContext" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mStatus">
+      <EntityTypeMapping TypeName="ParkerModel1.mStatu">
+        <MappingFragment StoreEntitySet="mStatus">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xUser_" ColumnName="xUser_" />
+          <ScalarProperty Name="xStatus" ColumnName="xStatus" />
+          <ScalarProperty Name="xClose" ColumnName="xClose" />
+          <ScalarProperty Name="xMessage" ColumnName="xMessage" />
+          <ScalarProperty Name="xShowMessage" ColumnName="xShowMessage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mStores">
+      <EntityTypeMapping TypeName="ParkerModel1.mStore">
+        <MappingFragment StoreEntitySet="mStore">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xDate" ColumnName="xDate" />
+          <ScalarProperty Name="xRegisterTime" ColumnName="xRegisterTime" />
+          <ScalarProperty Name="xCustomer_" ColumnName="xCustomer_" />
+          <ScalarProperty Name="xCustomerTitle" ColumnName="xCustomerTitle" />
+          <ScalarProperty Name="xGenStatus_" ColumnName="xGenStatus_" />
+          <ScalarProperty Name="xSellerUser_" ColumnName="xSellerUser_" />
+          <ScalarProperty Name="xIntroduced" ColumnName="xIntroduced" />
+          <ScalarProperty Name="xSupplier_" ColumnName="xSupplier_" />
+          <ScalarProperty Name="xComment" ColumnName="xComment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mStoreDetials">
+      <EntityTypeMapping TypeName="ParkerModel1.mStoreDetial">
+        <MappingFragment StoreEntitySet="mStoreDetials">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xGoodsCode" ColumnName="xGoodsCode" />
+          <ScalarProperty Name="xGoodsContext" ColumnName="xGoodsContext" />
+          <ScalarProperty Name="xGoods_" ColumnName="xGoods_" />
+          <ScalarProperty Name="xUnits" ColumnName="xUnits" />
+          <ScalarProperty Name="xBrand" ColumnName="xBrand" />
+          <ScalarProperty Name="xSupplierCompany" ColumnName="xSupplierCompany" />
+          <ScalarProperty Name="xAmount" ColumnName="xAmount" />
+          <ScalarProperty Name="xPrice" ColumnName="xPrice" />
+          <ScalarProperty Name="xDiscount" ColumnName="xDiscount" />
+          <ScalarProperty Name="xStore_" ColumnName="xStore_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mUsers">
+      <EntityTypeMapping TypeName="ParkerModel1.mUser">
+        <MappingFragment StoreEntitySet="mUser">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xUserName" ColumnName="xUserName" />
+          <ScalarProperty Name="xPasswod" ColumnName="xPasswod" />
+          <ScalarProperty Name="xName" ColumnName="xName" />
+          <ScalarProperty Name="xFamily" ColumnName="xFamily" />
+          <ScalarProperty Name="xTel" ColumnName="xTel" />
+          <ScalarProperty Name="xEmail" ColumnName="xEmail" />
+          <ScalarProperty Name="xGroup_" ColumnName="xGroup_" />
+          <ScalarProperty Name="xActive" ColumnName="xActive" />
+          <ScalarProperty Name="xPerInfo_" ColumnName="xPerInfo_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mUserevents">
+      <EntityTypeMapping TypeName="ParkerModel1.mUserevent">
+        <MappingFragment StoreEntitySet="mUserevent">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xEventTime" ColumnName="xEventTime" />
+          <ScalarProperty Name="xEventType" ColumnName="xEventType" />
+          <ScalarProperty Name="xEventCode" ColumnName="xEventCode" />
+          <ScalarProperty Name="xMessage" ColumnName="xMessage" />
+          <ScalarProperty Name="xMachinename" ColumnName="xMachinename" />
+          <ScalarProperty Name="xDetails" ColumnName="xDetails" />
+          <ScalarProperty Name="xIp" ColumnName="xIp" />
+          <ScalarProperty Name="xUserId" ColumnName="xUserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="ParkerModel1.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

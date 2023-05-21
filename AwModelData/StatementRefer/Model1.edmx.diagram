@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6572908cd5644af893f714b216fccb22" Name="Diagram1" ZoomLevel="11">
+        <EntityTypeShape EntityType="ParkerModel1.mAuthentication" Width="1.5" PointX="7.5" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mClientReferral" Width="1.5" PointX="16.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mClientReferralFollowUp" Width="1.5" PointX="19" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mClientReferralSurvey" Width="1.5" PointX="11.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mCompany" Width="1.5" PointX="13.75" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mContractor" Width="1.5" PointX="3.75" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mContractorsEvaluation" Width="1.5" PointX="6" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mCustomer" Width="1.5" PointX="9.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mCustomerCheckedList" Width="1.5" PointX="15.75" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mCustomerQuestion" Width="1.5" PointX="17.75" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mGenGroup" Width="1.5" PointX="0.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mGood" Width="1.5" PointX="12" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mGoodsAndSupplierInfo" Width="1.5" PointX="19.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mGroup" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mMarketerInformation" Width="1.5" PointX="7.75" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mMarketerInformationFollowUp" Width="1.5" PointX="10" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mMessage" Width="1.5" PointX="19.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mObject" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mObjectGroup" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mObjectTree" Width="1.5" PointX="19.75" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mObjectType" Width="1.5" PointX="3" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mPersonInfo" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mPoem" Width="1.5" PointX="8.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mQuestion" Width="1.5" PointX="3" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mQuestionItem" Width="1.5" PointX="5.25" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mRebuilding" Width="1.5" PointX="15.75" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mRenovation" Width="1.5" PointX="14.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mRenovationFloor" Width="1.5" PointX="5.25" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mRenovationProject" Width="1.5" PointX="3" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mRenovationProjectAnswer" Width="1.5" PointX="7.5" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mRenovationUnit" Width="1.5" PointX="17" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mShift" Width="1.5" PointX="17.75" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mSMSContext" Width="1.5" PointX="19.75" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mSMSLog" Width="1.5" PointX="21.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mState" Width="1.5" PointX="21.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mStatementRefer" Width="1.5" PointX="9.75" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mStatementReferFollowUp" Width="1.5" PointX="12" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mStatementRentalIncome" Width="1.5" PointX="21.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mStatementRentalIncomeSurvey" Width="1.5" PointX="21.75" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mStatementSaleIncome" Width="1.5" PointX="21.75" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mStatementSaleIncomeSurvey" Width="1.5" PointX="23.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mStatu" Width="1.5" PointX="0.75" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mStore" Width="1.5" PointX="12" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mStoreDetial" Width="1.5" PointX="14.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mUser" Width="1.5" PointX="5.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.mUserevent" Width="1.5" PointX="23.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ParkerModel1.sysdiagram" Width="1.5" PointX="23.75" PointY="9.875" IsExpanded="true" />
+        <AssociationConnector Association="ParkerModel1.FK_mAuthentication_mGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mAuthentication_mObject" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mAuthentication_mUser" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mClientReferralFollowUp_mClientReferral" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mContractorsEvaluation_mContractor" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mContractorsEvaluation_mGenGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mStore_mCustomer" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mPersonInfo_mGenGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mPersonInfo_mGenGroup1" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mPersonInfo_mGenGroup2" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mQuestion_mGenGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mQuestion_mGenGroup1" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mRenovationProject_mGenGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mRenovationProjectAnswer_mGenGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mStoreDetials_mGoods" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mUser_mGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mMarketerInformationFollowUp_mMarketerInformation" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mObject_mObjectGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mObject_mObjectType" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mUser_mPersonInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mQuestionItem_mQuestion" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mRenovationUnit_mRenovation" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mRenovationFloor_mRenovationProject" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mRenovationProjectAnswer_mRenovationFloor" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mStatementReferFollowUp_mStatementRefer" ManuallyRouted="false" />
+        <AssociationConnector Association="ParkerModel1.FK_mStoreDetials_mStore" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

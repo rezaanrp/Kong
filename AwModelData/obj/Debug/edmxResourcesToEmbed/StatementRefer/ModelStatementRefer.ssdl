@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ParkerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="mStatementRefer">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xConsultant_" Type="int" />
+    <Property Name="xFileNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="xFileDate" Type="nchar" MaxLength="10" />
+    <Property Name="xBuildingOwnerName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xBuildingOwnerTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="xBuildingAddress" Type="nvarchar" MaxLength="500" />
+    <Property Name="xFailureConcludeContract" Type="nvarchar" MaxLength="500" />
+    <Property Name="xFollowUpDate" Type="nchar" MaxLength="10" />
+    <Property Name="xFollowUpType" Type="nvarchar" MaxLength="50" />
+    <Property Name="xComment" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenFollowUpFinalResult_" Type="int" />
+    <Property Name="xFollowUpFinalResult" Type="nvarchar" MaxLength="500" />
+    <Property Name="xSuggestedItems" Type="nvarchar" MaxLength="500" />
+    <Property Name="xSoldItems" Type="nvarchar" MaxLength="500" />
+    <Property Name="xContractCost" Type="bigint" />
+    <Property Name="xConsultantCommission" Type="bigint" />
+    <Property Name="xReferFinanceConfirm" Type="bit" />
+    <Property Name="xSupplierReferFinanceConfirm_" Type="int" />
+    <Property Name="xFollowUpComment" Type="nvarchar" MaxLength="500" />
+    <Property Name="xSendMessage" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="ParkerModelStoreContainer">
+    <EntitySet Name="mStatementRefer" EntityType="Self.mStatementRefer" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

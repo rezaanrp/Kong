@@ -1,0 +1,1356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ParkerModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="mAuthentication">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xUser_" Type="int" />
+    <Property Name="xGroup_" Type="int" />
+    <Property Name="xInsert" Type="bit" />
+    <Property Name="xUpdate" Type="bit" />
+    <Property Name="xDelete" Type="bit" />
+    <Property Name="xObject_" Type="int" />
+  </EntityType>
+  <EntityType Name="mClientReferral">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xTime" Type="nchar" MaxLength="5" />
+    <Property Name="xDate" Type="nchar" MaxLength="10" />
+    <Property Name="xClientReferral" Type="nvarchar" MaxLength="50" />
+    <Property Name="xTel" Type="nchar" MaxLength="11" />
+    <Property Name="xRequestedGoods" Type="nvarchar" MaxLength="150" />
+    <Property Name="xAmount" Type="nvarchar" MaxLength="50" />
+    <Property Name="xAddress" Type="nvarchar" MaxLength="500" />
+    <Property Name="xAction" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenReferTo_" Type="int" />
+    <Property Name="xReferName" Type="nvarchar" MaxLength="100" />
+    <Property Name="xReferConfirm" Type="bit" />
+    <Property Name="xReferConfirmSupplier_" Type="int" />
+    <Property Name="xReferConfirmDate" Type="nchar" MaxLength="10" />
+    <Property Name="xContractPrice" Type="bigint" />
+    <Property Name="xRecommenderCommission" Type="bigint" />
+    <Property Name="xReferFinanceConfirm" Type="bit" />
+    <Property Name="xSupplier_" Type="int" />
+    <Property Name="xSendWellComeMessage" Type="bit" />
+    <Property Name="xGenResultOfReferral_" Type="int" />
+    <Property Name="xComment" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="mClientReferralFollowUp">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xDate" Type="nchar" MaxLength="10" />
+    <Property Name="xTime" Type="nchar" MaxLength="5" />
+    <Property Name="xGenFollowUp_" Type="int" />
+    <Property Name="xAction" Type="nvarchar" MaxLength="500" />
+    <Property Name="xConstructionStage" Type="nvarchar" MaxLength="100" />
+    <Property Name="xMasterFollowUp" Type="nvarchar" MaxLength="100" />
+    <Property Name="xSupplier_" Type="int" />
+    <Property Name="xClientReferral_" Type="int" />
+  </EntityType>
+  <EntityType Name="mClientReferralSurvey">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xClientReferral_" Type="int" />
+    <Property Name="xGenSurveyForWho_" Type="int" />
+    <Property Name="xAnswerNumber" Type="int" />
+    <Property Name="xQuestion" Type="nvarchar" MaxLength="500" />
+    <Property Name="xAnswerContext" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="mCompany">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xCompanyName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xBusinessNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="xRegistrationNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="xNationalCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="xFieldActivity" Type="nvarchar" MaxLength="50" />
+    <Property Name="xTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="xFax" Type="nvarchar" MaxLength="50" />
+    <Property Name="xEmail" Type="nvarchar" MaxLength="100" />
+    <Property Name="xZipCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="xAddress" Type="nvarchar" MaxLength="500" />
+    <Property Name="xWebsite" Type="nvarchar" MaxLength="100" />
+    <Property Name="xSupplyManager" Type="nvarchar" MaxLength="50" />
+    <Property Name="xSupplyManagerTel" Type="nvarchar" MaxLength="100" />
+    <Property Name="xDirectorFactor" Type="nvarchar" MaxLength="50" />
+    <Property Name="xDirectorFactorTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="xGrade" Type="int" />
+    <Property Name="xGradeDate" Type="nchar" MaxLength="10" />
+    <Property Name="xSerial" Type="nvarchar" MaxLength="50" />
+    <Property Name="xEvaluationPerson" Type="nvarchar" MaxLength="50" />
+    <Property Name="xSupplier_" Type="int" />
+    <Property Name="xComment" Type="nvarchar" MaxLength="500" />
+    <Property Name="xActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="mContractor">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xFamily" Type="nvarchar" MaxLength="50" />
+    <Property Name="xFatherName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xGenJob_" Type="int" />
+    <Property Name="xNationalCode" Type="nchar" MaxLength="10" />
+    <Property Name="xMobile" Type="nchar" MaxLength="14" />
+    <Property Name="xTel" Type="nchar" MaxLength="14" />
+    <Property Name="xZone" Type="nvarchar" MaxLength="50" />
+    <Property Name="xAddress" Type="nvarchar" MaxLength="500" />
+    <Property Name="xSupplier_" Type="int" />
+  </EntityType>
+  <EntityType Name="mContractorsEvaluation">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xContractors_" Type="int" />
+    <Property Name="xGenEvaluationName_" Type="int" />
+    <Property Name="xScore" Type="int" />
+    <Property Name="xSupplier_" Type="int" />
+  </EntityType>
+  <EntityType Name="mCustomer">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xGenCUSTOMERTYPE_" Type="int" />
+    <Property Name="xName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xLastName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xBusinessNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="xRegistrationNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="xNationalCode" Type="nchar" MaxLength="10" />
+    <Property Name="xFatherName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xChildNo" Type="int" />
+    <Property Name="xBirthDay" Type="nchar" MaxLength="10" />
+    <Property Name="xMobile" Type="nchar" MaxLength="12" />
+    <Property Name="xPhone" Type="nchar" MaxLength="12" />
+    <Property Name="xEmploy" Type="nvarchar" MaxLength="50" />
+    <Property Name="xAddress" Type="nvarchar" MaxLength="200" />
+    <Property Name="xZipCode" Type="nchar" MaxLength="10" />
+    <Property Name="xDate" Type="nchar" MaxLength="10" />
+    <Property Name="xSupplier_" Type="int" />
+  </EntityType>
+  <EntityType Name="mCustomerCheckedList">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xCustomer_" Type="int" />
+    <Property Name="xGen_" Type="int" />
+    <Property Name="xType" Type="nvarchar" MaxLength="50" />
+    <Property Name="xChecked" Type="bit" />
+  </EntityType>
+  <EntityType Name="mCustomerQuestion">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xCustomer_" Type="int" />
+    <Property Name="xQuestion_" Type="int" />
+    <Property Name="xFloorNumber" Type="int" />
+    <Property Name="xGenGroup_" Type="int" />
+  </EntityType>
+  <EntityType Name="mGenGroup">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xType" Type="nvarchar" MaxLength="50" />
+    <Property Name="xName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xValue" Type="float" />
+    <Property Name="xComment" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="mGoods">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="xGenGroup_" Type="int" />
+    <Property Name="xGenUnit_" Type="int" />
+    <Property Name="xSupplier_" Type="int" />
+  </EntityType>
+  <EntityType Name="mGoodsAndSupplierInfo">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xGoods_" Type="int" />
+    <Property Name="xCompany_" Type="int" />
+    <Property Name="xBrand" Type="nvarchar" MaxLength="50" />
+    <Property Name="xOrderSupplyPeriod" Type="nvarchar" MaxLength="50" />
+    <Property Name="xDeliveryDayNumber" Type="int" />
+    <Property Name="xSettlementType" Type="nvarchar" MaxLength="100" />
+    <Property Name="xContractType" Type="nvarchar" MaxLength="50" />
+    <Property Name="xLastSupplierGrade" Type="nvarchar" MaxLength="50" />
+    <Property Name="xMinimumInventoryRequired" Type="nvarchar" MaxLength="50" />
+    <Property Name="xSalesExpertName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xSalesExpertNameAlternatives" Type="nvarchar" MaxLength="50" />
+    <Property Name="xSupplier_" Type="int" />
+  </EntityType>
+  <EntityType Name="mGroup">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xGroupName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="mMarketerInformation">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xDate" Type="nchar" MaxLength="10" />
+    <Property Name="xAddress" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenUsage_" Type="int" />
+    <Property Name="xArea" Type="nvarchar" MaxLength="50" />
+    <Property Name="xFloorNumber" Type="int" />
+    <Property Name="xUnitNumber" Type="int" />
+    <Property Name="xConstractionState_" Type="int" />
+    <Property Name="xBuildingLicenseDate" Type="nchar" MaxLength="10" />
+    <Property Name="xBuildingOwner" Type="nvarchar" MaxLength="50" />
+    <Property Name="xBuildingOwnerTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="xContractor" Type="nvarchar" MaxLength="50" />
+    <Property Name="xContractorTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="xSiteManeger" Type="nvarchar" MaxLength="50" />
+    <Property Name="xSiteManegerTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="xGuardName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xGuardTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="xInterViewer" Type="nvarchar" MaxLength="50" />
+    <Property Name="xInterViewerJob" Type="nvarchar" MaxLength="50" />
+    <Property Name="xInterViewerTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="xDesignService" Type="bit" />
+    <Property Name="xBulidingTypeService_" Type="int" />
+    <Property Name="xKitchen" Type="bit" />
+    <Property Name="xWallCoverings" Type="bit" />
+    <Property Name="xFloorCoverings" Type="bit" />
+    <Property Name="xFacilities" Type="bit" />
+    <Property Name="xWoodenProducts" Type="bit" />
+    <Property Name="xStoneAndBricks" Type="bit" />
+    <Property Name="xDecorationInside" Type="bit" />
+    <Property Name="xConcrete" Type="bit" />
+    <Property Name="xOtherService" Type="nvarchar" MaxLength="500" />
+    <Property Name="xComment" Type="nvarchar" MaxLength="500" />
+    <Property Name="xIntroductionFor" Type="nvarchar" MaxLength="50" />
+    <Property Name="xIntroductionCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="xSupplier_" Type="int" />
+    <Property Name="xRegisterDate" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="mMarketerInformationFollowUp">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xDate" Type="nchar" MaxLength="10" />
+    <Property Name="xTime" Type="nchar" MaxLength="5" />
+    <Property Name="xGenFollowUp_" Type="int" />
+    <Property Name="xComment" Type="nvarchar" MaxLength="500" />
+    <Property Name="xSupplier_" Type="int" />
+    <Property Name="xMarketerInformation_" Type="int" />
+  </EntityType>
+  <EntityType Name="mMessage">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xDate" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="xUser_" Type="int" Nullable="false" />
+    <Property Name="xSubject" Type="nvarchar" MaxLength="100" />
+    <Property Name="xContext" Type="nvarchar" MaxLength="4000" />
+    <Property Name="xDateExpire" Type="char" MaxLength="10" />
+    <Property Name="xSendTo_" Type="int" />
+    <Property Name="xDateRead" Type="char" MaxLength="10" />
+    <Property Name="xDo" Type="bit" />
+    <Property Name="xType" Type="char" MaxLength="2" />
+    <Property Name="xLetterId" Type="char" MaxLength="18" />
+    <Property Name="xReplyFrom" Type="char" MaxLength="18" />
+    <Property Name="xCurrentTime" Type="char" MaxLength="8" />
+    <Property Name="xMessageFrom" Type="nvarchar" MaxLength="1000" />
+    <Property Name="xElan" Type="bit" />
+    <Property Name="xRdTlg" Type="char" MaxLength="10" />
+    <Property Name="xFileId_" Type="int" />
+  </EntityType>
+  <EntityType Name="mObject">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xObjectname" Type="varchar" MaxLength="50" />
+    <Property Name="xObjectFarsiName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xRegistringGroup_" Type="int" />
+    <Property Name="xType_" Type="int" />
+    <Property Name="xGroup_" Type="int" />
+  </EntityType>
+  <EntityType Name="mObjectGroup">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="mObjectTree">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xObject_" Type="int" />
+    <Property Name="xParent_" Type="int" />
+    <Property Name="xName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xOrder" Type="int" />
+  </EntityType>
+  <EntityType Name="mObjectType">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xObjectType" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="mPersonInfo">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xActive" Type="bit" />
+    <Property Name="xPerID" Type="nvarchar" MaxLength="10" />
+    <Property Name="xName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xFamily" Type="nvarchar" MaxLength="50" />
+    <Property Name="xSection_" Type="int" />
+    <Property Name="xPost" Type="nvarchar" MaxLength="50" />
+    <Property Name="xMob" Type="varchar" MaxLength="50" />
+    <Property Name="xBirthDay" Type="char" MaxLength="10" />
+    <Property Name="xDateEmployeement" Type="char" MaxLength="10" />
+    <Property Name="xEducation_" Type="int" />
+    <Property Name="xFatherName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xSex_" Type="int" />
+    <Property Name="xNationalCode" Type="char" MaxLength="10" />
+    <Property Name="xAddress" Type="nvarchar" MaxLength="300" />
+    <Property Name="xTel" Type="varchar" MaxLength="50" />
+    <Property Name="xIdentity" Type="nchar" MaxLength="10" />
+    <Property Name="xEmail" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="mPoem">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xText" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="mQuestion">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xQuestion" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenType_" Type="int" />
+    <Property Name="xGenGroupLevel1_" Type="int" />
+    <Property Name="xGenGroupLevel2_" Type="int" />
+    <Property Name="xPublic" Type="bit" />
+    <Property Name="xOrder" Type="int" />
+    <Property Name="xActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="mQuestionItem">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xQuestionItem" Type="nvarchar" MaxLength="500" />
+    <Property Name="xQuestion_" Type="int" />
+  </EntityType>
+  <EntityType Name="mRebuilding">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xDate" Type="nchar" MaxLength="10" />
+    <Property Name="xCustomer_" Type="int" />
+    <Property Name="xGenUsageType_" Type="int" />
+    <Property Name="xBuldingStatus_" Type="int" />
+    <Property Name="xArea" Type="int" />
+    <Property Name="xZone" Type="nchar" MaxLength="10" />
+    <Property Name="xAddress" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenPosition_" Type="int" />
+    <Property Name="xlength" Type="int" />
+    <Property Name="xWidth" Type="int" />
+    <Property Name="xGenContractType_" Type="int" />
+    <Property Name="xLicenseRebuilding" Type="bit" />
+    <Property Name="xLicenseRebuildingComment" Type="nvarchar" MaxLength="500" />
+    <Property Name="xProductionLicense" Type="bit" />
+    <Property Name="xProductionLicenseComment" Type="nvarchar" MaxLength="500" />
+    <Property Name="xBuildingUnitsNumber" Type="int" />
+    <Property Name="xFloorsNumber" Type="int" />
+    <Property Name="xBuildingUnitsNumberRequest" Type="int" />
+    <Property Name="xUnitID" Type="int" />
+    <Property Name="xUnitArea" Type="int" />
+    <Property Name="xAreaRebuilding" Type="int" />
+    <Property Name="xBuildingYear" Type="nchar" MaxLength="4" />
+    <Property Name="xBedroomsNumber" Type="int" />
+    <Property Name="xBedroomsNumber_Ch" Type="int" />
+    <Property Name="xBedroomsNumber_Crr" Type="bit" />
+    <Property Name="xBedroomsNumber_CkM" Type="bit" />
+    <Property Name="xBedroomsNumber_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xBathroomNumber" Type="int" />
+    <Property Name="xBathroomNumber_Ch" Type="int" />
+    <Property Name="xBathroomNumber_Crr" Type="bit" />
+    <Property Name="xBathroomNumber_CkM" Type="bit" />
+    <Property Name="xBathroomNumber_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xToiletNumber" Type="int" />
+    <Property Name="xToiletNumber_Ch" Type="int" />
+    <Property Name="xToiletNumber_Crr" Type="bit" />
+    <Property Name="xToiletNumber_CkM" Type="bit" />
+    <Property Name="xToiletNumber_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenRoof_" Type="int" />
+    <Property Name="xGenRoof_Ch_" Type="int" />
+    <Property Name="xGenRoof_Crr" Type="bit" />
+    <Property Name="xGenRoof_CkM" Type="bit" />
+    <Property Name="xGenRoof_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenBuildingSkeleton_" Type="int" />
+    <Property Name="xGenBuildingSkeleton_Ch_" Type="int" />
+    <Property Name="xGenBuildingSkeleton_Crr" Type="bit" />
+    <Property Name="xGenBuildingSkeleton_CkM" Type="bit" />
+    <Property Name="xGenBuildingSkeleton_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenFoundation_" Type="int" />
+    <Property Name="xGenFoundation_Ch_" Type="int" />
+    <Property Name="xGenFoundation_Crr" Type="bit" />
+    <Property Name="xGenFoundation_CkM" Type="bit" />
+    <Property Name="xGenFoundation_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenWall_" Type="int" />
+    <Property Name="xGenWall_Ch_" Type="int" />
+    <Property Name="xGenWall_Crr" Type="bit" />
+    <Property Name="xGenWall_CkM" Type="bit" />
+    <Property Name="xGenWall_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenWaterPiping_" Type="int" />
+    <Property Name="xGenWaterPiping_Ch_" Type="int" />
+    <Property Name="xGenWaterPiping_Crr" Type="bit" />
+    <Property Name="xGenWaterPiping_CkM" Type="bit" />
+    <Property Name="xGenWaterPiping_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenGasPiping_" Type="int" />
+    <Property Name="xGenGasPiping_Ch_" Type="int" />
+    <Property Name="xGenGasPiping_Crr" Type="bit" />
+    <Property Name="xGenGasPiping_CkM" Type="bit" />
+    <Property Name="xGenGasPiping_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenCoolingSystem_" Type="int" />
+    <Property Name="xGenCoolingSystem_Ch_" Type="int" />
+    <Property Name="xGenCoolingSystem_Crr" Type="bit" />
+    <Property Name="xGenCoolingSystem_CkM" Type="bit" />
+    <Property Name="xGenCoolingSystem_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenHeatingSystem_" Type="int" />
+    <Property Name="xGenHeatingSystem_Ch_" Type="int" />
+    <Property Name="xGenHeatingSystem_Crr" Type="bit" />
+    <Property Name="xGenHeatingSystem_CkM" Type="bit" />
+    <Property Name="xGenHeatingSystem_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenFlooring_" Type="int" />
+    <Property Name="xGenFlooring_Ch_" Type="int" />
+    <Property Name="xGenFlooring_Crr" Type="bit" />
+    <Property Name="xGenFlooring_CkM" Type="bit" />
+    <Property Name="xGenFlooring_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenKitchenWall_" Type="int" />
+    <Property Name="xGenKitchenWall_Ch_" Type="int" />
+    <Property Name="xGenKitchenWall_Crr" Type="bit" />
+    <Property Name="xGenKitchenWall_CkM" Type="bit" />
+    <Property Name="xGenKitchenWall_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenKitchenFloor_" Type="int" />
+    <Property Name="xGenKitchenFloor_Ch_" Type="int" />
+    <Property Name="xGenKitchenFloor_Crr" Type="bit" />
+    <Property Name="xGenKitchenFloor_CkM" Type="bit" />
+    <Property Name="xGenKitchenFloor_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenKitchenCupboards_" Type="int" />
+    <Property Name="xGenKitchenCupboards_Ch_" Type="int" />
+    <Property Name="xGenKitchenCupboards_Crr" Type="bit" />
+    <Property Name="xGenKitchenCupboards_CkM" Type="bit" />
+    <Property Name="xGenKitchenCupboards_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenBathroomPiping_" Type="int" />
+    <Property Name="xGenBathroomPiping_Ch_" Type="int" />
+    <Property Name="xGenBathroomPiping_Crr" Type="bit" />
+    <Property Name="xGenBathroomPiping_CkM" Type="bit" />
+    <Property Name="xGenBathroomPiping_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xBathtub" Type="bit" />
+    <Property Name="xBathtub_Ch" Type="bit" />
+    <Property Name="xBathtub_Crr" Type="bit" />
+    <Property Name="xBathtub_CkM" Type="bit" />
+    <Property Name="xBathtub_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xBathTile" Type="bit" />
+    <Property Name="xBathTile_Ch" Type="bit" />
+    <Property Name="xBathTile_Crr" Type="bit" />
+    <Property Name="xBathTile_CkM" Type="bit" />
+    <Property Name="xBathTile_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenAdaptationMap_" Type="int" />
+    <Property Name="xGenPrepareCurrentSituationMaps_" Type="int" />
+    <Property Name="xGenAmountDestruction_" Type="int" />
+    <Property Name="xWeightDestruction" Type="int" />
+    <Property Name="xGenTransportDestructionMetod_" Type="int" />
+    <Property Name="xGenAccessDestructionMetod_" Type="int" />
+    <Property Name="xNeighborUnitCount" Type="int" />
+    <Property Name="xNeighborsLivingNumber" Type="int" />
+    <Property Name="xRiskNeighborsComplaints" Type="int" />
+    <Property Name="xRiskMunicipalityPrevent" Type="int" />
+    <Property Name="xRiskForcedDestruction" Type="int" />
+    <Property Name="xRiskDamageBuilding" Type="int" />
+    <Property Name="xDestructionDurationDay" Type="int" />
+    <Property Name="xDestructionRebuildingDay" Type="int" />
+    <Property Name="xGenReasonsRebuilding_" Type="int" />
+    <Property Name="xSupplier_" Type="int" />
+  </EntityType>
+  <EntityType Name="mRenovation">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xDate" Type="nchar" MaxLength="10" />
+    <Property Name="xCustomer_" Type="int" />
+    <Property Name="xGenUsageType_" Type="int" />
+    <Property Name="xBuildingStatus_" Type="int" />
+    <Property Name="xArea" Type="int" />
+    <Property Name="xZone" Type="nvarchar" MaxLength="3" />
+    <Property Name="xAddress" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenPosition_" Type="int" />
+    <Property Name="xlength" Type="int" />
+    <Property Name="xWidth" Type="int" />
+    <Property Name="xGenContractType_" Type="int" />
+    <Property Name="xLicenseRenovation" Type="bit" />
+    <Property Name="xLicenseRenovationComment" Type="nvarchar" MaxLength="500" />
+    <Property Name="xProductionLicense" Type="bit" />
+    <Property Name="xProductionLicenseComment" Type="nvarchar" MaxLength="500" />
+    <Property Name="xFloorsNumber" Type="int" />
+    <Property Name="xFloorsNumber_Ckm" Type="bit" />
+    <Property Name="xFloorsNumber_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xBuildingUnitsNumberRequest" Type="int" />
+    <Property Name="xBuildingUnitsNumberRequest_Ckm" Type="bit" />
+    <Property Name="xBuildingUnitsNumberRequest_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xParkingNumber" Type="int" />
+    <Property Name="xParkingNumber_CkM" Type="bit" />
+    <Property Name="xParkingNumber_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xStorageNumber" Type="int" />
+    <Property Name="xStorageNumber_CkM" Type="bit" />
+    <Property Name="xStorageNumber_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xRoofGarden" Type="bit" />
+    <Property Name="xRoofGarden_CkM" Type="bit" />
+    <Property Name="xRoofGarden_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xWeightDestruction" Type="int" />
+    <Property Name="xGenTransportDestructionMetod_" Type="int" />
+    <Property Name="xGenAccessDestructionMetod_" Type="int" />
+    <Property Name="xNeighborUnitCount" Type="int" />
+    <Property Name="xNeighborsLivingNumber" Type="int" />
+    <Property Name="xRiskNeighborsComplaints" Type="int" />
+    <Property Name="xRiskMunicipalityPrevent" Type="int" />
+    <Property Name="xRiskDamageBuildingNeighbors" Type="int" />
+    <Property Name="xDestructionDurationDay" Type="int" />
+    <Property Name="xGenReasonsRenovation_" Type="int" />
+    <Property Name="xSupplier_" Type="int" />
+    <Property Name="xComment" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="mRenovationFloor">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xRenovationProject_" Type="int" />
+    <Property Name="xUnitNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="xGenUnitType_" Type="int" />
+  </EntityType>
+  <EntityType Name="mRenovationProject">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xDate" Type="nchar" MaxLength="10" />
+    <Property Name="xCustomer_" Type="int" />
+    <Property Name="xGenQUESTLEVL1_" Type="int" />
+    <Property Name="xAddress" Type="nvarchar" MaxLength="500" />
+    <Property Name="xComment" Type="nvarchar" MaxLength="500" />
+    <Property Name="xSupplier_" Type="int" />
+    <Property Name="xGenStatus_" Type="int" />
+  </EntityType>
+  <EntityType Name="mRenovationProjectAnswer">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xRenovationFloor_" Type="int" />
+    <Property Name="xQuestion_" Type="int" />
+    <Property Name="xQuestionItem_" Type="int" />
+    <Property Name="xQestionContext" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenStatus_" Type="int" />
+    <Property Name="xComment" Type="nvarchar" MaxLength="500" />
+    <Property Name="xSupplier_" Type="int" />
+    <Property Name="xDate" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="mRenovationUnit">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xRenovation_" Type="int" />
+    <Property Name="xUnitNumber" Type="int" />
+    <Property Name="xArea" Type="int" />
+    <Property Name="xLength" Type="int" />
+    <Property Name="xWidth" Type="int" />
+    <Property Name="xGenCoolingSystem_" Type="int" />
+    <Property Name="xGenCoolingSystem_CkM" Type="bit" />
+    <Property Name="xGenCoolingSystem_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenHeatingSystem_" Type="int" />
+    <Property Name="xGenHeatingSystem_CkM" Type="bit" />
+    <Property Name="xGenHeatingSystem_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xBedroomsNumber" Type="int" />
+    <Property Name="xBedroomsNumber_CkM" Type="bit" />
+    <Property Name="xBedroomsNumber_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xBathroomNumber" Type="int" />
+    <Property Name="xBathroomNumber_CkM" Type="bit" />
+    <Property Name="xBathroomNumber_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xToiletNumber" Type="int" />
+    <Property Name="xToiletNumber_CkM" Type="bit" />
+    <Property Name="xToiletNumber_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenFlooring_" Type="int" />
+    <Property Name="xGenFlooring_CkM" Type="bit" />
+    <Property Name="xGenFlooring_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenKitchenCupboards_" Type="int" />
+    <Property Name="xGenKitchenCupboards_CkM" Type="bit" />
+    <Property Name="xGenKitchenCupboards_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xBathtub" Type="bit" />
+    <Property Name="xBathtub_CkM" Type="bit" />
+    <Property Name="xBathtub_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xJacuzzi" Type="bit" />
+    <Property Name="xJacuzzi_Ckm" Type="bit" />
+    <Property Name="xJacuzzi_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xSauna" Type="bit" />
+    <Property Name="xSauna_Ckm" Type="bit" />
+    <Property Name="xSauna_Remark" Type="nvarchar" MaxLength="500" />
+    <Property Name="xComment" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="mShift">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xShiftName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="xShiftSuperviser" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="xShiftInspector" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="xFernesSuperviser" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="xSandOperator" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mSMSContext">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xSubjectSMS" Type="nvarchar" MaxLength="50" />
+    <Property Name="xSMS" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="mSMSLog">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xDate" Type="nchar" MaxLength="10" />
+    <Property Name="xTime" Type="nchar" MaxLength="5" />
+    <Property Name="xUser_" Type="int" />
+    <Property Name="xContext" Type="nvarchar" MaxLength="500" />
+    <Property Name="xMobile" Type="nvarchar" MaxLength="50" />
+    <Property Name="xForm" Type="nvarchar" MaxLength="50" />
+    <Property Name="xResult" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="mState">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mStatementRefer">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xConsultant_" Type="int" />
+    <Property Name="xFileNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="xFileDate" Type="nchar" MaxLength="10" />
+    <Property Name="xBuildingOwnerName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xBuildingOwnerTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="xBuildingAddress" Type="nvarchar" MaxLength="500" />
+    <Property Name="xFailureConcludeContract" Type="nvarchar" MaxLength="500" />
+    <Property Name="xFollowUpDate" Type="nchar" MaxLength="10" />
+    <Property Name="xFollowUpType" Type="nvarchar" MaxLength="50" />
+    <Property Name="xComment" Type="nvarchar" MaxLength="500" />
+    <Property Name="xGenFollowUpFinalResult_" Type="int" />
+    <Property Name="xFollowUpFinalResult" Type="nvarchar" MaxLength="500" />
+    <Property Name="xSuggestedItems" Type="nvarchar" MaxLength="500" />
+    <Property Name="xSoldItems" Type="nvarchar" MaxLength="500" />
+    <Property Name="xContractCost" Type="bigint" />
+    <Property Name="xConsultantCommission" Type="bigint" />
+    <Property Name="xReferFinanceConfirm" Type="bit" />
+    <Property Name="xSupplierReferFinanceConfirm_" Type="int" />
+    <Property Name="xFollowUpComment" Type="nvarchar" MaxLength="500" />
+    <Property Name="xSendMessage" Type="bit" />
+  </EntityType>
+  <EntityType Name="mStatementReferFollowUp">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" Nullable="false" />
+    <Property Name="xDate" Type="nchar" MaxLength="10" />
+    <Property Name="xTime" Type="nchar" MaxLength="5" />
+    <Property Name="xGenFollowUp_" Type="int" />
+    <Property Name="xAction" Type="nvarchar" MaxLength="500" />
+    <Property Name="xConstructionStage" Type="nvarchar" MaxLength="100" />
+    <Property Name="xMasterFollowUp" Type="nvarchar" MaxLength="100" />
+    <Property Name="xSupplier_" Type="int" />
+    <Property Name="xStatementRefer_" Type="int" />
+  </EntityType>
+  <EntityType Name="mStatementRentalIncome">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xContractDate" Type="nchar" MaxLength="10" />
+    <Property Name="xContractNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="xGenBuildingType_" Type="int" />
+    <Property Name="xBuildingAddress" Type="nvarchar" MaxLength="500" />
+    <Property Name="xMortgage" Type="bigint" />
+    <Property Name="xRent" Type="bigint" />
+    <Property Name="xGuildCommission" Type="bigint" />
+    <Property Name="xContractConsultant" Type="nvarchar" MaxLength="50" />
+    <Property Name="xContractManager" Type="nvarchar" MaxLength="50" />
+    <Property Name="xLessorName" Type="nvarchar" MaxLength="100" />
+    <Property Name="xLessorAddress" Type="nvarchar" MaxLength="500" />
+    <Property Name="xLessorNationalCode" Type="nchar" MaxLength="10" />
+    <Property Name="xLessorTel" Type="nchar" MaxLength="11" />
+    <Property Name="xLessorEarnestCommission" Type="bigint" />
+    <Property Name="xLessorCommission" Type="bigint" />
+    <Property Name="xTenantName" Type="nvarchar" MaxLength="100" />
+    <Property Name="xTenantAddress" Type="nvarchar" MaxLength="500" />
+    <Property Name="xTenantNationalCode" Type="nchar" MaxLength="10" />
+    <Property Name="xTenantTel" Type="nchar" MaxLength="11" />
+    <Property Name="xTenantEarnestCommission" Type="bigint" />
+    <Property Name="xTenantCommission" Type="bigint" />
+    <Property Name="xHomeDeliveryDate" Type="nchar" MaxLength="10" />
+    <Property Name="xContractEndDate" Type="nchar" MaxLength="10" />
+    <Property Name="xFinancialApprove" Type="bit" />
+    <Property Name="xFinancialApprove_" Type="int" />
+    <Property Name="xSupplier_" Type="int" />
+    <Property Name="xComment" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="mStatementRentalIncomeSurvey">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xStatementRentalIncome_" Type="int" />
+    <Property Name="xGenSurveyForWho_" Type="int" />
+    <Property Name="xAnswerNumber" Type="int" />
+    <Property Name="xQuestion" Type="nvarchar" MaxLength="500" />
+    <Property Name="xAnswerContext" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="mStatementSaleIncome">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xContractDate" Type="nchar" MaxLength="10" />
+    <Property Name="xContractNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="xGenBuildingType_" Type="int" />
+    <Property Name="xBuildingAddress" Type="nvarchar" MaxLength="500" />
+    <Property Name="xPrice" Type="bigint" />
+    <Property Name="xGuildCommission" Type="bigint" />
+    <Property Name="xContractConsultant" Type="nvarchar" MaxLength="50" />
+    <Property Name="xContractManager" Type="nvarchar" MaxLength="50" />
+    <Property Name="xSellerName" Type="nvarchar" MaxLength="100" />
+    <Property Name="xSellerAddress" Type="nvarchar" MaxLength="500" />
+    <Property Name="xSellerNationalCode" Type="nchar" MaxLength="10" />
+    <Property Name="xSellerTel" Type="nchar" MaxLength="11" />
+    <Property Name="xSellerEarnestCommission" Type="bigint" />
+    <Property Name="xSellerCommission" Type="bigint" />
+    <Property Name="xBuyerName" Type="nvarchar" MaxLength="100" />
+    <Property Name="xBuyerAddress" Type="nvarchar" MaxLength="500" />
+    <Property Name="xBuyerNationalCode" Type="nchar" MaxLength="10" />
+    <Property Name="xBuyerTel" Type="nchar" MaxLength="11" />
+    <Property Name="xBuyerEarnestCommission" Type="bigint" />
+    <Property Name="xBuyerCommission" Type="bigint" />
+    <Property Name="xFinancialApprove" Type="bit" />
+    <Property Name="xFinancialApprove_" Type="int" />
+    <Property Name="xComment" Type="nvarchar" MaxLength="500" />
+    <Property Name="xHomeDeliveryDate" Type="nchar" MaxLength="10" />
+    <Property Name="xDocumentTransferDate" Type="nchar" MaxLength="10" />
+    <Property Name="xSupplier_" Type="int" />
+  </EntityType>
+  <EntityType Name="mStatementSaleIncomeSurvey">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xStatementSaleIncome_" Type="int" />
+    <Property Name="xGenSurveyForWho_" Type="int" />
+    <Property Name="xAnswerNumber" Type="int" />
+    <Property Name="xQuestion" Type="nvarchar" MaxLength="500" />
+    <Property Name="xAnswerContext" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="mStatus">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="bigint" Nullable="false" />
+    <Property Name="xUser_" Type="int" />
+    <Property Name="xStatus" Type="bit" />
+    <Property Name="xClose" Type="bit" />
+    <Property Name="xMessage" Type="nvarchar" MaxLength="300" />
+    <Property Name="xShowMessage" Type="bit" />
+  </EntityType>
+  <EntityType Name="mStore">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xDate" Type="nchar" MaxLength="10" />
+    <Property Name="xRegisterTime" Type="nchar" MaxLength="5" />
+    <Property Name="xCustomer_" Type="int" />
+    <Property Name="xCustomerTitle" Type="nvarchar" MaxLength="50" />
+    <Property Name="xGenStatus_" Type="int" />
+    <Property Name="xSellerUser_" Type="int" />
+    <Property Name="xIntroduced" Type="nvarchar" MaxLength="50" />
+    <Property Name="xSupplier_" Type="int" />
+    <Property Name="xComment" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="mStoreDetials">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xGoodsCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="xGoodsContext" Type="nvarchar" MaxLength="100" />
+    <Property Name="xGoods_" Type="int" />
+    <Property Name="xUnits" Type="nvarchar" MaxLength="50" />
+    <Property Name="xBrand" Type="nvarchar" MaxLength="50" />
+    <Property Name="xSupplierCompany" Type="nvarchar" MaxLength="50" />
+    <Property Name="xAmount" Type="float" />
+    <Property Name="xPrice" Type="int" />
+    <Property Name="xDiscount" Type="int" />
+    <Property Name="xStore_" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'Parker.dbo.mStudent' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="mStudent">
+          <Property Name="id" Type="nchar" MaxLength="10" />
+          <Property Name="Name" Type="nchar" MaxLength="10" />
+          <Property Name="Family" Type="nchar" MaxLength="10" />
+        </EntityType>-->
+  <EntityType Name="mUser">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xUserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="xPasswod" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="xName" Type="nvarchar" MaxLength="50" />
+    <Property Name="xFamily" Type="nvarchar" MaxLength="50" />
+    <Property Name="xTel" Type="nvarchar" MaxLength="50" />
+    <Property Name="xEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="xGroup_" Type="int" />
+    <Property Name="xActive" Type="bit" Nullable="false" />
+    <Property Name="xPerInfo_" Type="int" />
+  </EntityType>
+  <EntityType Name="mUserevent">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="xEventTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="xEventType" Type="nvarchar" MaxLength="50" />
+    <Property Name="xEventCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="xMessage" Type="nvarchar" MaxLength="50" />
+    <Property Name="xMachinename" Type="nvarchar" MaxLength="50" />
+    <Property Name="xDetails" Type="nvarchar" MaxLength="50" />
+    <Property Name="xIp" Type="nchar" MaxLength="15" />
+    <Property Name="xUserId" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_mAuthentication_mGroup">
+    <End Role="mGroup" Type="Self.mGroup" Multiplicity="0..1" />
+    <End Role="mAuthentication" Type="Self.mAuthentication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mGroup">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mAuthentication">
+        <PropertyRef Name="xGroup_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mAuthentication_mObject">
+    <End Role="mObject" Type="Self.mObject" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="mAuthentication" Type="Self.mAuthentication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mObject">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mAuthentication">
+        <PropertyRef Name="xObject_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mAuthentication_mUser">
+    <End Role="mUser" Type="Self.mUser" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="mAuthentication" Type="Self.mAuthentication" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mUser">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mAuthentication">
+        <PropertyRef Name="xUser_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mClientReferralFollowUp_mClientReferral">
+    <End Role="mClientReferral" Type="Self.mClientReferral" Multiplicity="0..1" />
+    <End Role="mClientReferralFollowUp" Type="Self.mClientReferralFollowUp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mClientReferral">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mClientReferralFollowUp">
+        <PropertyRef Name="xClientReferral_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mContractorsEvaluation_mContractor">
+    <End Role="mContractor" Type="Self.mContractor" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="mContractorsEvaluation" Type="Self.mContractorsEvaluation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mContractor">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mContractorsEvaluation">
+        <PropertyRef Name="xContractors_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mContractorsEvaluation_mGenGroup">
+    <End Role="mGenGroup" Type="Self.mGenGroup" Multiplicity="0..1" />
+    <End Role="mContractorsEvaluation" Type="Self.mContractorsEvaluation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mGenGroup">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mContractorsEvaluation">
+        <PropertyRef Name="xGenEvaluationName_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mMarketerInformationFollowUp_mMarketerInformation">
+    <End Role="mMarketerInformation" Type="Self.mMarketerInformation" Multiplicity="0..1" />
+    <End Role="mMarketerInformationFollowUp" Type="Self.mMarketerInformationFollowUp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mMarketerInformation">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mMarketerInformationFollowUp">
+        <PropertyRef Name="xMarketerInformation_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mObject_mObjectGroup">
+    <End Role="mObjectGroup" Type="Self.mObjectGroup" Multiplicity="0..1" />
+    <End Role="mObject" Type="Self.mObject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mObjectGroup">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mObject">
+        <PropertyRef Name="xGroup_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mObject_mObjectType">
+    <End Role="mObjectType" Type="Self.mObjectType" Multiplicity="0..1" />
+    <End Role="mObject" Type="Self.mObject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mObjectType">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mObject">
+        <PropertyRef Name="xType_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mPersonInfo_mGenGroup">
+    <End Role="mGenGroup" Type="Self.mGenGroup" Multiplicity="0..1" />
+    <End Role="mPersonInfo" Type="Self.mPersonInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mGenGroup">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mPersonInfo">
+        <PropertyRef Name="xSection_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mPersonInfo_mGenGroup1">
+    <End Role="mGenGroup" Type="Self.mGenGroup" Multiplicity="0..1" />
+    <End Role="mPersonInfo" Type="Self.mPersonInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mGenGroup">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mPersonInfo">
+        <PropertyRef Name="xSex_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mPersonInfo_mGenGroup2">
+    <End Role="mGenGroup" Type="Self.mGenGroup" Multiplicity="0..1" />
+    <End Role="mPersonInfo" Type="Self.mPersonInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mGenGroup">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mPersonInfo">
+        <PropertyRef Name="xEducation_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mQuestion_mGenGroup">
+    <End Role="mGenGroup" Type="Self.mGenGroup" Multiplicity="0..1" />
+    <End Role="mQuestion" Type="Self.mQuestion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mGenGroup">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mQuestion">
+        <PropertyRef Name="xGenGroupLevel1_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mQuestion_mGenGroup1">
+    <End Role="mGenGroup" Type="Self.mGenGroup" Multiplicity="0..1" />
+    <End Role="mQuestion" Type="Self.mQuestion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mGenGroup">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mQuestion">
+        <PropertyRef Name="xGenGroupLevel2_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mQuestionItem_mQuestion">
+    <End Role="mQuestion" Type="Self.mQuestion" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="mQuestionItem" Type="Self.mQuestionItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mQuestion">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mQuestionItem">
+        <PropertyRef Name="xQuestion_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mRenovationFloor_mRenovationProject">
+    <End Role="mRenovationProject" Type="Self.mRenovationProject" Multiplicity="0..1" />
+    <End Role="mRenovationFloor" Type="Self.mRenovationFloor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mRenovationProject">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mRenovationFloor">
+        <PropertyRef Name="xRenovationProject_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mRenovationProject_mGenGroup">
+    <End Role="mGenGroup" Type="Self.mGenGroup" Multiplicity="0..1" />
+    <End Role="mRenovationProject" Type="Self.mRenovationProject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mGenGroup">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mRenovationProject">
+        <PropertyRef Name="xGenQUESTLEVL1_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mRenovationProjectAnswer_mGenGroup">
+    <End Role="mGenGroup" Type="Self.mGenGroup" Multiplicity="0..1" />
+    <End Role="mRenovationProjectAnswer" Type="Self.mRenovationProjectAnswer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mGenGroup">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mRenovationProjectAnswer">
+        <PropertyRef Name="xGenStatus_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mRenovationProjectAnswer_mRenovationFloor">
+    <End Role="mRenovationFloor" Type="Self.mRenovationFloor" Multiplicity="0..1" />
+    <End Role="mRenovationProjectAnswer" Type="Self.mRenovationProjectAnswer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mRenovationFloor">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mRenovationProjectAnswer">
+        <PropertyRef Name="xRenovationFloor_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mRenovationUnit_mRenovation">
+    <End Role="mRenovation" Type="Self.mRenovation" Multiplicity="0..1" />
+    <End Role="mRenovationUnit" Type="Self.mRenovationUnit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mRenovation">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mRenovationUnit">
+        <PropertyRef Name="xRenovation_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mStatementReferFollowUp_mStatementRefer">
+    <End Role="mStatementRefer" Type="Self.mStatementRefer" Multiplicity="0..1" />
+    <End Role="mStatementReferFollowUp" Type="Self.mStatementReferFollowUp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mStatementRefer">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mStatementReferFollowUp">
+        <PropertyRef Name="xStatementRefer_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mStore_mCustomer">
+    <End Role="mCustomer" Type="Self.mCustomer" Multiplicity="0..1" />
+    <End Role="mStore" Type="Self.mStore" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mCustomer">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mStore">
+        <PropertyRef Name="xCustomer_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mStoreDetials_mGoods">
+    <End Role="mGoods" Type="Self.mGoods" Multiplicity="0..1" />
+    <End Role="mStoreDetials" Type="Self.mStoreDetials" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mGoods">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mStoreDetials">
+        <PropertyRef Name="xGoods_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mStoreDetials_mStore">
+    <End Role="mStore" Type="Self.mStore" Multiplicity="0..1" />
+    <End Role="mStoreDetials" Type="Self.mStoreDetials" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mStore">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mStoreDetials">
+        <PropertyRef Name="xStore_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mUser_mGroup">
+    <End Role="mGroup" Type="Self.mGroup" Multiplicity="0..1" />
+    <End Role="mUser" Type="Self.mUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mGroup">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mUser">
+        <PropertyRef Name="xGroup_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mUser_mPersonInfo">
+    <End Role="mPersonInfo" Type="Self.mPersonInfo" Multiplicity="0..1" />
+    <End Role="mUser" Type="Self.mUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="mPersonInfo">
+        <PropertyRef Name="x_" />
+      </Principal>
+      <Dependent Role="mUser">
+        <PropertyRef Name="xPerInfo_" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ParkerModel1StoreContainer">
+    <EntitySet Name="mAuthentication" EntityType="Self.mAuthentication" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mClientReferral" EntityType="Self.mClientReferral" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mClientReferralFollowUp" EntityType="Self.mClientReferralFollowUp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mClientReferralSurvey" EntityType="Self.mClientReferralSurvey" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mCompany" EntityType="Self.mCompany" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mContractor" EntityType="Self.mContractor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mContractorsEvaluation" EntityType="Self.mContractorsEvaluation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mCustomer" EntityType="Self.mCustomer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mCustomerCheckedList" EntityType="Self.mCustomerCheckedList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mCustomerQuestion" EntityType="Self.mCustomerQuestion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mGenGroup" EntityType="Self.mGenGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mGoods" EntityType="Self.mGoods" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mGoodsAndSupplierInfo" EntityType="Self.mGoodsAndSupplierInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mGroup" EntityType="Self.mGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mMarketerInformation" EntityType="Self.mMarketerInformation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mMarketerInformationFollowUp" EntityType="Self.mMarketerInformationFollowUp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mMessage" EntityType="Self.mMessage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mObject" EntityType="Self.mObject" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mObjectGroup" EntityType="Self.mObjectGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mObjectTree" EntityType="Self.mObjectTree" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mObjectType" EntityType="Self.mObjectType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mPersonInfo" EntityType="Self.mPersonInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mPoem" EntityType="Self.mPoem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mQuestion" EntityType="Self.mQuestion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mQuestionItem" EntityType="Self.mQuestionItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mRebuilding" EntityType="Self.mRebuilding" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mRenovation" EntityType="Self.mRenovation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mRenovationFloor" EntityType="Self.mRenovationFloor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mRenovationProject" EntityType="Self.mRenovationProject" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mRenovationProjectAnswer" EntityType="Self.mRenovationProjectAnswer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mRenovationUnit" EntityType="Self.mRenovationUnit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mShift" EntityType="Self.mShift" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mSMSContext" EntityType="Self.mSMSContext" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mSMSLog" EntityType="Self.mSMSLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mState" EntityType="Self.mState" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mStatementRefer" EntityType="Self.mStatementRefer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mStatementReferFollowUp" EntityType="Self.mStatementReferFollowUp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mStatementRentalIncome" EntityType="Self.mStatementRentalIncome" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mStatementRentalIncomeSurvey" EntityType="Self.mStatementRentalIncomeSurvey" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mStatementSaleIncome" EntityType="Self.mStatementSaleIncome" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mStatementSaleIncomeSurvey" EntityType="Self.mStatementSaleIncomeSurvey" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mStatus" EntityType="Self.mStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mStore" EntityType="Self.mStore" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mStoreDetials" EntityType="Self.mStoreDetials" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mUser" EntityType="Self.mUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mUserevent" EntityType="Self.mUserevent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_mAuthentication_mGroup" Association="Self.FK_mAuthentication_mGroup">
+      <End Role="mGroup" EntitySet="mGroup" />
+      <End Role="mAuthentication" EntitySet="mAuthentication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mAuthentication_mObject" Association="Self.FK_mAuthentication_mObject">
+      <End Role="mObject" EntitySet="mObject" />
+      <End Role="mAuthentication" EntitySet="mAuthentication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mAuthentication_mUser" Association="Self.FK_mAuthentication_mUser">
+      <End Role="mUser" EntitySet="mUser" />
+      <End Role="mAuthentication" EntitySet="mAuthentication" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mClientReferralFollowUp_mClientReferral" Association="Self.FK_mClientReferralFollowUp_mClientReferral">
+      <End Role="mClientReferral" EntitySet="mClientReferral" />
+      <End Role="mClientReferralFollowUp" EntitySet="mClientReferralFollowUp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mContractorsEvaluation_mContractor" Association="Self.FK_mContractorsEvaluation_mContractor">
+      <End Role="mContractor" EntitySet="mContractor" />
+      <End Role="mContractorsEvaluation" EntitySet="mContractorsEvaluation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mContractorsEvaluation_mGenGroup" Association="Self.FK_mContractorsEvaluation_mGenGroup">
+      <End Role="mGenGroup" EntitySet="mGenGroup" />
+      <End Role="mContractorsEvaluation" EntitySet="mContractorsEvaluation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mMarketerInformationFollowUp_mMarketerInformation" Association="Self.FK_mMarketerInformationFollowUp_mMarketerInformation">
+      <End Role="mMarketerInformation" EntitySet="mMarketerInformation" />
+      <End Role="mMarketerInformationFollowUp" EntitySet="mMarketerInformationFollowUp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mObject_mObjectGroup" Association="Self.FK_mObject_mObjectGroup">
+      <End Role="mObjectGroup" EntitySet="mObjectGroup" />
+      <End Role="mObject" EntitySet="mObject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mObject_mObjectType" Association="Self.FK_mObject_mObjectType">
+      <End Role="mObjectType" EntitySet="mObjectType" />
+      <End Role="mObject" EntitySet="mObject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mPersonInfo_mGenGroup" Association="Self.FK_mPersonInfo_mGenGroup">
+      <End Role="mGenGroup" EntitySet="mGenGroup" />
+      <End Role="mPersonInfo" EntitySet="mPersonInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mPersonInfo_mGenGroup1" Association="Self.FK_mPersonInfo_mGenGroup1">
+      <End Role="mGenGroup" EntitySet="mGenGroup" />
+      <End Role="mPersonInfo" EntitySet="mPersonInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mPersonInfo_mGenGroup2" Association="Self.FK_mPersonInfo_mGenGroup2">
+      <End Role="mGenGroup" EntitySet="mGenGroup" />
+      <End Role="mPersonInfo" EntitySet="mPersonInfo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mQuestion_mGenGroup" Association="Self.FK_mQuestion_mGenGroup">
+      <End Role="mGenGroup" EntitySet="mGenGroup" />
+      <End Role="mQuestion" EntitySet="mQuestion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mQuestion_mGenGroup1" Association="Self.FK_mQuestion_mGenGroup1">
+      <End Role="mGenGroup" EntitySet="mGenGroup" />
+      <End Role="mQuestion" EntitySet="mQuestion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mQuestionItem_mQuestion" Association="Self.FK_mQuestionItem_mQuestion">
+      <End Role="mQuestion" EntitySet="mQuestion" />
+      <End Role="mQuestionItem" EntitySet="mQuestionItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mRenovationFloor_mRenovationProject" Association="Self.FK_mRenovationFloor_mRenovationProject">
+      <End Role="mRenovationProject" EntitySet="mRenovationProject" />
+      <End Role="mRenovationFloor" EntitySet="mRenovationFloor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mRenovationProject_mGenGroup" Association="Self.FK_mRenovationProject_mGenGroup">
+      <End Role="mGenGroup" EntitySet="mGenGroup" />
+      <End Role="mRenovationProject" EntitySet="mRenovationProject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mRenovationProjectAnswer_mGenGroup" Association="Self.FK_mRenovationProjectAnswer_mGenGroup">
+      <End Role="mGenGroup" EntitySet="mGenGroup" />
+      <End Role="mRenovationProjectAnswer" EntitySet="mRenovationProjectAnswer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mRenovationProjectAnswer_mRenovationFloor" Association="Self.FK_mRenovationProjectAnswer_mRenovationFloor">
+      <End Role="mRenovationFloor" EntitySet="mRenovationFloor" />
+      <End Role="mRenovationProjectAnswer" EntitySet="mRenovationProjectAnswer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mRenovationUnit_mRenovation" Association="Self.FK_mRenovationUnit_mRenovation">
+      <End Role="mRenovation" EntitySet="mRenovation" />
+      <End Role="mRenovationUnit" EntitySet="mRenovationUnit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mStatementReferFollowUp_mStatementRefer" Association="Self.FK_mStatementReferFollowUp_mStatementRefer">
+      <End Role="mStatementRefer" EntitySet="mStatementRefer" />
+      <End Role="mStatementReferFollowUp" EntitySet="mStatementReferFollowUp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mStore_mCustomer" Association="Self.FK_mStore_mCustomer">
+      <End Role="mCustomer" EntitySet="mCustomer" />
+      <End Role="mStore" EntitySet="mStore" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mStoreDetials_mGoods" Association="Self.FK_mStoreDetials_mGoods">
+      <End Role="mGoods" EntitySet="mGoods" />
+      <End Role="mStoreDetials" EntitySet="mStoreDetials" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mStoreDetials_mStore" Association="Self.FK_mStoreDetials_mStore">
+      <End Role="mStore" EntitySet="mStore" />
+      <End Role="mStoreDetials" EntitySet="mStoreDetials" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mUser_mGroup" Association="Self.FK_mUser_mGroup">
+      <End Role="mGroup" EntitySet="mGroup" />
+      <End Role="mUser" EntitySet="mUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mUser_mPersonInfo" Association="Self.FK_mUser_mPersonInfo">
+      <End Role="mPersonInfo" EntitySet="mPersonInfo" />
+      <End Role="mUser" EntitySet="mUser" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

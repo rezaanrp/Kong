@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ParkerModelStoreContainer" CdmEntityContainer="ParkerEntities">
+    <EntitySetMapping Name="mStatementRefers">
+      <EntityTypeMapping TypeName="ParkerModel.mStatementRefer">
+        <MappingFragment StoreEntitySet="mStatementRefer">
+          <ScalarProperty Name="x_" ColumnName="x_" />
+          <ScalarProperty Name="xConsultant_" ColumnName="xConsultant_" />
+          <ScalarProperty Name="xFileNumber" ColumnName="xFileNumber" />
+          <ScalarProperty Name="xFileDate" ColumnName="xFileDate" />
+          <ScalarProperty Name="xBuildingOwnerName" ColumnName="xBuildingOwnerName" />
+          <ScalarProperty Name="xBuildingOwnerTel" ColumnName="xBuildingOwnerTel" />
+          <ScalarProperty Name="xBuildingAddress" ColumnName="xBuildingAddress" />
+          <ScalarProperty Name="xFailureConcludeContract" ColumnName="xFailureConcludeContract" />
+          <ScalarProperty Name="xFollowUpDate" ColumnName="xFollowUpDate" />
+          <ScalarProperty Name="xFollowUpType" ColumnName="xFollowUpType" />
+          <ScalarProperty Name="xComment" ColumnName="xComment" />
+          <ScalarProperty Name="xGenFollowUpFinalResult_" ColumnName="xGenFollowUpFinalResult_" />
+          <ScalarProperty Name="xFollowUpFinalResult" ColumnName="xFollowUpFinalResult" />
+          <ScalarProperty Name="xSuggestedItems" ColumnName="xSuggestedItems" />
+          <ScalarProperty Name="xSoldItems" ColumnName="xSoldItems" />
+          <ScalarProperty Name="xContractCost" ColumnName="xContractCost" />
+          <ScalarProperty Name="xConsultantCommission" ColumnName="xConsultantCommission" />
+          <ScalarProperty Name="xReferFinanceConfirm" ColumnName="xReferFinanceConfirm" />
+          <ScalarProperty Name="xSupplierReferFinanceConfirm_" ColumnName="xSupplierReferFinanceConfirm_" />
+          <ScalarProperty Name="xFollowUpComment" ColumnName="xFollowUpComment" />
+          <ScalarProperty Name="xSendMessage" ColumnName="xSendMessage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

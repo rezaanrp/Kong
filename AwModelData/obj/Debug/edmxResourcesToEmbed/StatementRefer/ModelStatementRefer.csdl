@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ParkerModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="mStatementRefer">
+    <Key>
+      <PropertyRef Name="x_" />
+    </Key>
+    <Property Name="x_" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="xConsultant_" Type="Int32" />
+    <Property Name="xFileNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="xFileDate" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="xBuildingOwnerName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="xBuildingOwnerTel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="xBuildingAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="xFailureConcludeContract" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="xFollowUpDate" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="xFollowUpType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="xComment" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="xGenFollowUpFinalResult_" Type="Int32" />
+    <Property Name="xFollowUpFinalResult" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="xSuggestedItems" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="xSoldItems" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="xContractCost" Type="Int64" />
+    <Property Name="xConsultantCommission" Type="Int64" />
+    <Property Name="xReferFinanceConfirm" Type="Boolean" />
+    <Property Name="xSupplierReferFinanceConfirm_" Type="Int32" />
+    <Property Name="xFollowUpComment" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="xSendMessage" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="ParkerEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="mStatementRefers" EntityType="Self.mStatementRefer" />
+  </EntityContainer>
+</Schema>
