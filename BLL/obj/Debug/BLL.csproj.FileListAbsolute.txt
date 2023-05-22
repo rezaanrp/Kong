@@ -106,3 +106,16 @@ D:\MIS\KONGERE\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 D:\MIS\KONGERE\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\MIS\KONGERE\BLL\obj\Debug\BLL.dll
 D:\MIS\KONGERE\BLL\obj\Debug\BLL.pdb
+C:\Users\r.tavili\Source\Repos\Kong\BLL\bin\Debug\BLL.dll.config
+C:\Users\r.tavili\Source\Repos\Kong\BLL\bin\Debug\BLL.dll
+C:\Users\r.tavili\Source\Repos\Kong\BLL\bin\Debug\BLL.pdb
+C:\Users\r.tavili\Source\Repos\Kong\BLL\bin\Debug\DAL.dll
+C:\Users\r.tavili\Source\Repos\Kong\BLL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\r.tavili\Source\Repos\Kong\BLL\bin\Debug\DAL.pdb
+C:\Users\r.tavili\Source\Repos\Kong\BLL\bin\Debug\DAL.dll.config
+C:\Users\r.tavili\Source\Repos\Kong\BLL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\r.tavili\Source\Repos\Kong\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\r.tavili\Source\Repos\Kong\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\r.tavili\Source\Repos\Kong\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\r.tavili\Source\Repos\Kong\BLL\obj\Debug\BLL.dll
+C:\Users\r.tavili\Source\Repos\Kong\BLL\obj\Debug\BLL.pdb

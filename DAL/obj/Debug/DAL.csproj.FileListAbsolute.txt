@@ -75,3 +75,11 @@ D:\MIS\KONGERE\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\MIS\KONGERE\DAL\obj\Debug\DAL.dll
 D:\MIS\KONGERE\DAL\obj\Debug\DAL.pdb
 D:\MIS\KONGERE\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\r.tavili\Source\Repos\Kong\DAL\bin\Debug\DAL.dll.config
+C:\Users\r.tavili\Source\Repos\Kong\DAL\bin\Debug\DAL.dll
+C:\Users\r.tavili\Source\Repos\Kong\DAL\bin\Debug\DAL.pdb
+C:\Users\r.tavili\Source\Repos\Kong\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\r.tavili\Source\Repos\Kong\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\r.tavili\Source\Repos\Kong\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\r.tavili\Source\Repos\Kong\DAL\obj\Debug\DAL.dll
+C:\Users\r.tavili\Source\Repos\Kong\DAL\obj\Debug\DAL.pdb

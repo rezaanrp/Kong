@@ -161,3 +161,14 @@ D:\MIS\KONGERE\Report\obj\Debug\Report.csproj.CopyComplete
 D:\MIS\KONGERE\Report\obj\Debug\Report.dll
 D:\MIS\KONGERE\Report\obj\Debug\Report.pdb
 D:\MIS\KONGERE\Report\obj\Debug\Report.csproj.AssemblyReference.cache
+C:\Users\r.tavili\Source\Repos\Kong\Report\bin\Debug\Report.dll.config
+C:\Users\r.tavili\Source\Repos\Kong\Report\bin\Debug\Report.dll
+C:\Users\r.tavili\Source\Repos\Kong\Report\bin\Debug\Report.pdb
+C:\Users\r.tavili\Source\Repos\Kong\Report\obj\Debug\Report.csproj.AssemblyReference.cache
+C:\Users\r.tavili\Source\Repos\Kong\Report\obj\Debug\Report.Form1.resources
+C:\Users\r.tavili\Source\Repos\Kong\Report\obj\Debug\Report.Properties.Resources.resources
+C:\Users\r.tavili\Source\Repos\Kong\Report\obj\Debug\Report.csproj.GenerateResource.cache
+C:\Users\r.tavili\Source\Repos\Kong\Report\obj\Debug\Report.csproj.CoreCompileInputs.cache
+C:\Users\r.tavili\Source\Repos\Kong\Report\obj\Debug\Report.csproj.CopyComplete
+C:\Users\r.tavili\Source\Repos\Kong\Report\obj\Debug\Report.dll
+C:\Users\r.tavili\Source\Repos\Kong\Report\obj\Debug\Report.pdb

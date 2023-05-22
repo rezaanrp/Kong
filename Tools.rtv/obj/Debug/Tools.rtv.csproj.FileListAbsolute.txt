@@ -25,3 +25,9 @@ D:\MIS\KONGERE\Tools.rtv\obj\Debug\Tools.rtv.csproj.CoreCompileInputs.cache
 D:\MIS\KONGERE\Tools.rtv\obj\Debug\Tools.rtv.dll
 D:\MIS\KONGERE\Tools.rtv\obj\Debug\Tools.rtv.pdb
 D:\MIS\KONGERE\Tools.rtv\obj\Debug\Tools.rtv.csproj.AssemblyReference.cache
+C:\Users\r.tavili\Source\Repos\Kong\Tools.rtv\bin\Debug\Tools.rtv.dll
+C:\Users\r.tavili\Source\Repos\Kong\Tools.rtv\bin\Debug\Tools.rtv.pdb
+C:\Users\r.tavili\Source\Repos\Kong\Tools.rtv\obj\Debug\Tools.rtv.csproj.AssemblyReference.cache
+C:\Users\r.tavili\Source\Repos\Kong\Tools.rtv\obj\Debug\Tools.rtv.csproj.CoreCompileInputs.cache
+C:\Users\r.tavili\Source\Repos\Kong\Tools.rtv\obj\Debug\Tools.rtv.dll
+C:\Users\r.tavili\Source\Repos\Kong\Tools.rtv\obj\Debug\Tools.rtv.pdb

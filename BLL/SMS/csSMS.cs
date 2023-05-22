@@ -125,17 +125,21 @@ namespace BLL.SMS
         }
 
     }
+        
 
     public string SendSMS_EsfahanPayamak(string Context, List<string> rcpts
         //Dictionary<string, string> sms
         //
         )
     {
+         string Usr = new BLL.GenGroup.csGenGroup().SlGenGroup("SMSUSERNAME").Rows[0]["xName"].ToString();
+         string Pas = new BLL.GenGroup.csGenGroup().SlGenGroup("SMSPASS").Rows[0]["xName"].ToString();
+
+        
         WebRequest request = WebRequest.Create("http://ippanel.com/services.jspd");
-        // string[] rcpts = new string[] { "09132372272" };
         string json = JsonConvert.SerializeObject(rcpts);
         request.Method = "POST";
-        string postData = "op=send&uname=amlakkongere7500&pass=@e4622033666&message=" + Context + "&to=" + json + "&from=+989999171675                            ";
+        string postData = "op=send&uname="+ Usr + "&pass="+ Pas + "&message=" + Context + "&to=" + json + "&from=+989999171675                            ";
         byte[] byteArray = Encoding.UTF8.GetBytes(postData);
         request.ContentType = "application/x-www-form-urlencoded";
         request.ContentLength = byteArray.Length;
