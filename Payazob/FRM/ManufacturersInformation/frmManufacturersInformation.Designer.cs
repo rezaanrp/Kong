@@ -37,6 +37,9 @@ namespace MIS.FRM.ManufacturersInformation
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer5 = new System.Windows.Forms.SplitContainer();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.FormGrid1 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.xTel = new JThomas.Controls.DataGridViewMaskedTextColumn();
+            this.xMobile = new JThomas.Controls.DataGridViewMaskedTextColumn();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem1 = new System.Windows.Forms.ToolStripButton();
@@ -56,6 +59,8 @@ namespace MIS.FRM.ManufacturersInformation
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.FormGrid3 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.xStartYear = new JThomas.Controls.DataGridViewMaskedTextColumn();
             this.bindingNavigator3 = new System.Windows.Forms.BindingNavigator(this.components);
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem3 = new System.Windows.Forms.ToolStripButton();
@@ -90,11 +95,6 @@ namespace MIS.FRM.ManufacturersInformation
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewMaskedTextColumn1 = new JThomas.Controls.DataGridViewMaskedTextColumn();
-            this.FormGrid1 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.xTel = new JThomas.Controls.DataGridViewMaskedTextColumn();
-            this.xMobile = new JThomas.Controls.DataGridViewMaskedTextColumn();
-            this.FormGrid3 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.xStartYear = new JThomas.Controls.DataGridViewMaskedTextColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -210,6 +210,7 @@ namespace MIS.FRM.ManufacturersInformation
             this.xMobile});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(748, 190);
@@ -217,6 +218,27 @@ namespace MIS.FRM.ManufacturersInformation
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEnter);
             this.dataGridView1.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dataGridView1_DataError);
+            // 
+            // FormGrid1
+            // 
+            this.FormGrid1.HeaderText = "عملیات";
+            this.FormGrid1.Name = "FormGrid1";
+            this.FormGrid1.Text = "ویرایش";
+            this.FormGrid1.UseColumnTextForButtonValue = true;
+            // 
+            // xTel
+            // 
+            this.xTel.DataPropertyName = "xTel";
+            this.xTel.HeaderText = "xTel";
+            this.xTel.Mask = "00000000000";
+            this.xTel.Name = "xTel";
+            // 
+            // xMobile
+            // 
+            this.xMobile.DataPropertyName = "xMobile";
+            this.xMobile.HeaderText = "xMobile";
+            this.xMobile.Mask = "00000000000";
+            this.xMobile.Name = "xMobile";
             // 
             // bindingNavigator1
             // 
@@ -294,7 +316,6 @@ namespace MIS.FRM.ManufacturersInformation
             // 
             this.toolStripTextBox1.AccessibleName = "Position";
             this.toolStripTextBox1.AutoSize = false;
-            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Size = new System.Drawing.Size(50, 23);
             this.toolStripTextBox1.Text = "0";
@@ -427,6 +448,22 @@ namespace MIS.FRM.ManufacturersInformation
             this.dataGridView3.TabIndex = 2;
             this.dataGridView3.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellClick);
             // 
+            // FormGrid3
+            // 
+            this.FormGrid3.HeaderText = "عملیات";
+            this.FormGrid3.Name = "FormGrid3";
+            this.FormGrid3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.FormGrid3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.FormGrid3.Text = "برآورد نیاز";
+            this.FormGrid3.UseColumnTextForButtonValue = true;
+            // 
+            // xStartYear
+            // 
+            this.xStartYear.DataPropertyName = "xStartYear";
+            this.xStartYear.HeaderText = "xStartYear";
+            this.xStartYear.Mask = "0000";
+            this.xStartYear.Name = "xStartYear";
+            // 
             // bindingNavigator3
             // 
             this.bindingNavigator3.AddNewItem = null;
@@ -502,7 +539,6 @@ namespace MIS.FRM.ManufacturersInformation
             // 
             this.toolStripTextBox3.AccessibleName = "Position";
             this.toolStripTextBox3.AutoSize = false;
-            this.toolStripTextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox3.Name = "toolStripTextBox3";
             this.toolStripTextBox3.Size = new System.Drawing.Size(50, 23);
             this.toolStripTextBox3.Text = "0";
@@ -667,7 +703,6 @@ namespace MIS.FRM.ManufacturersInformation
             // 
             this.toolStripTextBox2.AccessibleName = "Position";
             this.toolStripTextBox2.AutoSize = false;
-            this.toolStripTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox2.Name = "toolStripTextBox2";
             this.toolStripTextBox2.Size = new System.Drawing.Size(50, 23);
             this.toolStripTextBox2.Text = "0";
@@ -732,43 +767,6 @@ namespace MIS.FRM.ManufacturersInformation
             this.dataGridViewMaskedTextColumn1.Mask = "0000/00/00";
             this.dataGridViewMaskedTextColumn1.Name = "dataGridViewMaskedTextColumn1";
             this.dataGridViewMaskedTextColumn1.Width = 80;
-            // 
-            // FormGrid1
-            // 
-            this.FormGrid1.HeaderText = "عملیات";
-            this.FormGrid1.Name = "FormGrid1";
-            this.FormGrid1.Text = "ویرایش";
-            this.FormGrid1.UseColumnTextForButtonValue = true;
-            // 
-            // xTel
-            // 
-            this.xTel.DataPropertyName = "xTel";
-            this.xTel.HeaderText = "xTel";
-            this.xTel.Mask = "00000000000";
-            this.xTel.Name = "xTel";
-            // 
-            // xMobile
-            // 
-            this.xMobile.DataPropertyName = "xMobile";
-            this.xMobile.HeaderText = "xMobile";
-            this.xMobile.Mask = "00000000000";
-            this.xMobile.Name = "xMobile";
-            // 
-            // FormGrid3
-            // 
-            this.FormGrid3.HeaderText = "عملیات";
-            this.FormGrid3.Name = "FormGrid3";
-            this.FormGrid3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.FormGrid3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.FormGrid3.Text = "برآورد نیاز";
-            this.FormGrid3.UseColumnTextForButtonValue = true;
-            // 
-            // xStartYear
-            // 
-            this.xStartYear.DataPropertyName = "xStartYear";
-            this.xStartYear.HeaderText = "xStartYear";
-            this.xStartYear.Mask = "0000";
-            this.xStartYear.Name = "xStartYear";
             // 
             // frmManufacturersInformation
             // 

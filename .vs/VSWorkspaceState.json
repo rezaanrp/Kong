@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\DAL",
+    "\\DAL\\Properties",
+    "\\Payazob"
   ],
   "SelectedNode": "\\Parker.sln",
   "PreviewInSolutionExplorer": false

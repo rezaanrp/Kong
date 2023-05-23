@@ -10,8 +10,11 @@ namespace MIS.CS
             Form f;
             switch (frm)
             {
+                case "ManufacturersInformation_Process":
+                    f = new FRM.ManufacturersInformation.frmManufacturersInformation(true);
+                    break;
                 case "ManufacturersInformation":
-                    f = new FRM.ManufacturersInformation.frmManufacturersInformation();
+                    f = new FRM.ManufacturersInformation.frmManufacturersInformation(false);
                     break;
                 case "SlClientReferralSurveyReport":
                     f = new frmEmpty_Report("SlClientReferralSurveyReport", "");

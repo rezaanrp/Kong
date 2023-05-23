@@ -11,13 +11,15 @@ namespace MIS.FRM.ManufacturersInformation
 {
     public partial class frmManufacturersInformation : Form
     {
-        public frmManufacturersInformation()
+        public frmManufacturersInformation(bool showInProcessProject_)
         {
             InitializeComponent();
             CmbGiveValue();
             ShowData();
+            ShowInProcessProject = showInProcessProject_;
+            splitContainer2.Panel1Collapsed = !showInProcessProject_;
         }
-        
+        bool ShowInProcessProject= false;
         void CmbGiveValue()
         {
      
@@ -137,7 +139,6 @@ namespace MIS.FRM.ManufacturersInformation
 
 
         }
-
         DAL.ManufacturersInformation.DataSet_ManufacturersInformation.mManufacturersInformationDataTable dt_P;
         DAL.ManufacturersInformation.DataSet_ManufacturersInformation.mManufacturersInformationFinishProjectDataTable dt_P1;
         DAL.ManufacturersInformation.DataSet_ManufacturersInformation.mManufacturersInformationInProcessProjectDataTable dt_P2;
@@ -206,41 +207,46 @@ namespace MIS.FRM.ManufacturersInformation
         }
         void ShowDataGrid3(int x_)
         {
-            if (x_ > 0)
+            if (ShowInProcessProject)
             {
-                dt_P2 = new BLL.ManufacturersInformation.csManufacturersInformation().mManufacturersInformationInProcessProject(x_);
-                dataGridView3.ReadOnly = false;
-                bindingNavigator3.Enabled = true;
-            }
-            else
-            {
-                dt_P2 = new DAL.ManufacturersInformation.DataSet_ManufacturersInformation.mManufacturersInformationInProcessProjectDataTable();
-                dataGridView3.ReadOnly = true;
-                bindingNavigator3.Enabled = false;
-            }
+               
 
-            bindingSource3.DataSource = dt_P2;
-            dataGridView3.DataSource = bindingSource3;
-            bindingNavigator3.BindingSource = bindingSource3;
-            CS.csDic css = new CS.csDic();
-            foreach (DataColumn dc in dt_P2.Columns)
-            {
-                if (dataGridView3.Columns[dc.ColumnName] != null)
+                if (x_ > 0)
                 {
-                    dataGridView3.Columns[dc.ColumnName].HeaderText = css.EnToFarsiCatalog(dc.ColumnName);
-                    dataGridView3.Columns[dc.ColumnName].DisplayIndex = dt_P2.Columns[dc.ColumnName].Ordinal;
-
+                    dt_P2 = new BLL.ManufacturersInformation.csManufacturersInformation().mManufacturersInformationInProcessProject(x_);
+                    dataGridView3.ReadOnly = false;
+                    bindingNavigator3.Enabled = true;
                 }
+                else
+                {
+                    dt_P2 = new DAL.ManufacturersInformation.DataSet_ManufacturersInformation.mManufacturersInformationInProcessProjectDataTable();
+                    dataGridView3.ReadOnly = true;
+                    bindingNavigator3.Enabled = false;
+                }
+
+                bindingSource3.DataSource = dt_P2;
+                dataGridView3.DataSource = bindingSource3;
+                bindingNavigator3.BindingSource = bindingSource3;
+                CS.csDic css = new CS.csDic();
+                foreach (DataColumn dc in dt_P2.Columns)
+                {
+                    if (dataGridView3.Columns[dc.ColumnName] != null)
+                    {
+                        dataGridView3.Columns[dc.ColumnName].HeaderText = css.EnToFarsiCatalog(dc.ColumnName);
+                        dataGridView3.Columns[dc.ColumnName].DisplayIndex = dt_P2.Columns[dc.ColumnName].Ordinal;
+
+                    }
+                }
+                dt_P2.xManufacturersInformation_Column.DefaultValue = x_;
+                dt_P2.xSupplier_Column.DefaultValue = BLL.authentication.x_;
+                dataGridView3.Columns["x_"].Visible = false;
+                dataGridView3.Columns["xManufacturersInformation_"].Visible = false;
+                dataGridView3.Columns["xDate"].Visible = false;
+                dataGridView3.Columns["xSupplier_"].Visible = false;
+                dataGridView3.Columns["xComment"].Width = 250;
+                dataGridView3.Columns["xAddress"].Width = 250;
+                dataGridView3.Columns["FormGrid3"].DisplayIndex = 0;
             }
-            dt_P2.xManufacturersInformation_Column.DefaultValue = x_;
-            dt_P2.xSupplier_Column.DefaultValue = BLL.authentication.x_;
-            dataGridView3.Columns["x_"].Visible = false;
-            dataGridView3.Columns["xManufacturersInformation_"].Visible = false;
-            dataGridView3.Columns["xDate"].Visible = false;
-            dataGridView3.Columns["xSupplier_"].Visible = false;
-            dataGridView3.Columns["xComment"].Width = 250;
-            dataGridView3.Columns["xAddress"].Width = 250;
-            dataGridView3.Columns["FormGrid3"].DisplayIndex = 0;
 
         }
         private void dataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e)
@@ -256,9 +262,6 @@ namespace MIS.FRM.ManufacturersInformation
                 ShowDataGrid3(-1);
             }
         }
-
-
-
         private void toolStripButton_Bottom_Click(object sender, EventArgs e)
         {
             this.dataGridView1.EndEdit();
@@ -272,7 +275,6 @@ namespace MIS.FRM.ManufacturersInformation
                     ShowDataGrid2((int)dataGridView1.SelectedRows[0].Cells["x_"].Value);
             }
         }
-
         private void toolStripButton13_Click(object sender, EventArgs e)
         {
             this.dataGridView2.EndEdit();
@@ -286,7 +288,6 @@ namespace MIS.FRM.ManufacturersInformation
                     ShowDataGrid3((int)dataGridView1.SelectedRows[0].Cells["x_"].Value);
             }
         }
-
         private void saveToolStripButton_Top_Click_1(object sender, EventArgs e)
         {
             this.dataGridView2.EndEdit();
@@ -299,14 +300,10 @@ namespace MIS.FRM.ManufacturersInformation
                 ShowData();
             }
         }
-
- 
         private void toolStripButton_Add1_Click(object sender, EventArgs e)
         {
             new FRM.ManufacturersInformation.frmManufacturersInformationInsert(-1,true).ShowDialog();
         }
-
-
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if(e.RowIndex> -1 && e.ColumnIndex> -1 && dataGridView1.Columns[e.ColumnIndex].Name == "FormGrid1")
@@ -315,7 +312,6 @@ namespace MIS.FRM.ManufacturersInformation
                 ShowData();
             }
         }
-
         private void dataGridView3_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex > -1 
@@ -328,7 +324,6 @@ namespace MIS.FRM.ManufacturersInformation
                // ShowData();
             }
         }
-
         private void dataGridView1_DataError(object sender, DataGridViewDataErrorEventArgs e)
         {
 

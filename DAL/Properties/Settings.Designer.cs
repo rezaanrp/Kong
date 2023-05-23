@@ -58,7 +58,8 @@ namespace DAL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute(" Data Source=192.168.1.200;Initial Catalog=PARKER;; User ID=sa;Password=; ")]
+        [global::System.Configuration.DefaultSettingValueAttribute(" Data Source=192.168.1.200;Initial Catalog=PARKER;; User ID=sa;Password=K500at10;" +
+            " ")]
         public string PayazobConnectionString {
             get {
                 return ((string)(this["PayazobConnectionString"]));
@@ -68,7 +69,8 @@ namespace DAL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute(" Data Source=192.168.1.200;Initial Catalog=Payazob_Image;User ID=sa;Password=; ")]
+        [global::System.Configuration.DefaultSettingValueAttribute(" Data Source=192.168.1.200;Initial Catalog=Payazob_Image;User ID=sa;Password=K500" +
+            "at10; ")]
         public string Payazob_ImageConnectionString1 {
             get {
                 return ((string)(this["Payazob_ImageConnectionString1"]));

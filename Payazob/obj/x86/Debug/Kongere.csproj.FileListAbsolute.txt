@@ -168,7 +168,6 @@ C:\Users\r.tavili\Source\Repos\Kong\Payazob\bin\Debug\DLQ.dll.config
 C:\Users\r.tavili\Source\Repos\Kong\Payazob\bin\Debug\Report.pdb
 C:\Users\r.tavili\Source\Repos\Kong\Payazob\bin\Debug\Report.dll.config
 C:\Users\r.tavili\Source\Repos\Kong\Payazob\bin\Debug\Validation.pdb
-C:\Users\r.tavili\Source\Repos\Kong\Payazob\bin\Debug\System.xml
 C:\Users\r.tavili\Source\Repos\Kong\Payazob\bin\Debug\EntityFramework.xml
 C:\Users\r.tavili\Source\Repos\Kong\Payazob\bin\Debug\Newtonsoft.Json.xml
 C:\Users\r.tavili\Source\Repos\Kong\Payazob\obj\x86\Debug\Kongere.csproj.AssemblyReference.cache
