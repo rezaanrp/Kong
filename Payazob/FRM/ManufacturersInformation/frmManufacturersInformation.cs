@@ -18,6 +18,17 @@ namespace MIS.FRM.ManufacturersInformation
             ShowData();
             ShowInProcessProject = showInProcessProject_;
             splitContainer2.Panel1Collapsed = !showInProcessProject_;
+
+            dataGridView1.ReadOnly = showInProcessProject_;
+            dataGridView1.AllowUserToAddRows = !showInProcessProject_;
+            dataGridView1.AllowUserToDeleteRows = !showInProcessProject_;
+
+            dataGridView2.ReadOnly = showInProcessProject_;
+            dataGridView2.AllowUserToAddRows = !showInProcessProject_;
+            dataGridView2.AllowUserToDeleteRows = !showInProcessProject_;
+
+            saveToolStripButton_Top.Visible= !showInProcessProject_;
+            toolStripButton_Bottom.Visible= !showInProcessProject_;
         }
         bool ShowInProcessProject= false;
         void CmbGiveValue()
@@ -204,6 +215,9 @@ namespace MIS.FRM.ManufacturersInformation
             dataGridView2.Columns["xSupplier_"].Visible = false;
             dataGridView2.Columns["xComment"].Width = 250;
             dataGridView2.Columns["xAddress"].Width = 250;
+
+            dataGridView2.ReadOnly = ShowInProcessProject;
+
         }
         void ShowDataGrid3(int x_)
         {
@@ -308,7 +322,7 @@ namespace MIS.FRM.ManufacturersInformation
         {
             if(e.RowIndex> -1 && e.ColumnIndex> -1 && dataGridView1.Columns[e.ColumnIndex].Name == "FormGrid1")
             {
-                new FRM.ManufacturersInformation.frmManufacturersInformationInsert((int)dataGridView1["x_", e.RowIndex].Value, false).ShowDialog();
+                new FRM.ManufacturersInformation.frmManufacturersInformationInsert((int)dataGridView1["x_", e.RowIndex].Value, ShowInProcessProject).ShowDialog();
                 ShowData();
             }
         }

@@ -74,7 +74,7 @@ namespace BLL.Message
 
                 return (decimal)adp.InMessageByFile(xName, xFile);
             }
-            catch (Exception e)
+            catch (Exception )
             {
                 return -1;
             }

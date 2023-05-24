@@ -12,7 +12,7 @@ namespace DAL.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.10.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.4.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -20,6 +20,38 @@ namespace DAL.Properties {
         public static Settings Default {
             get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute(" Data Source=192.168.1.200;Initial Catalog=PARKER; User ID=sa;Password=")]
+        public string Con {
+            get {
+                return ((string)(this["Con"]));
+            }
+            set {
+                this["Con"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute(" Data Source=192.168.1.200;Initial Catalog=PARKER;; User ID=sa;Password=; ")]
+        public string PayazobConnectionString {
+            get {
+                return ((string)(this["PayazobConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute(" Data Source=192.168.1.200;Initial Catalog=Payazob_Image;User ID=sa;Password=; ")]
+        public string Payazob_ImageConnectionString1 {
+            get {
+                return ((string)(this["Payazob_ImageConnectionString1"]));
             }
         }
         
@@ -40,40 +72,6 @@ namespace DAL.Properties {
         public string EOS_93ConnectionString1 {
             get {
                 return ((string)(this["EOS_93ConnectionString1"]));
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(" Data Source=192.168.1.200;Initial Catalog=PARKER; User ID=sa;Password=")]
-        public string Con {
-            get {
-                return ((string)(this["Con"]));
-            }
-            set {
-                this["Con"] = value;
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute(" Data Source=192.168.1.200;Initial Catalog=PARKER;; User ID=sa;Password=K500at10;" +
-            " ")]
-        public string PayazobConnectionString {
-            get {
-                return ((string)(this["PayazobConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute(" Data Source=192.168.1.200;Initial Catalog=Payazob_Image;User ID=sa;Password=K500" +
-            "at10; ")]
-        public string Payazob_ImageConnectionString1 {
-            get {
-                return ((string)(this["Payazob_ImageConnectionString1"]));
             }
         }
     }

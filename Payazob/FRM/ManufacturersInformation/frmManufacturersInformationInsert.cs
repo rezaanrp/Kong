@@ -31,26 +31,29 @@ namespace MIS.FRM.ManufacturersInformation
             if (ReadOnlyForm)
                 MakeReadOnlyForm();
 
+
+
         }
         int x_Pu;
         bool ReadOnlyForm_;
         void MakeReadOnlyForm()
         {
-            foreach (ControlLibrary.uc_txtBox item in splitContainer1.Panel2.Controls.OfType<ControlLibrary.uc_txtBox>())
-            {
+            //foreach (ControlLibrary.uc_txtBox item in splitContainer1.Panel2.Controls.OfType<ControlLibrary.uc_txtBox>())
+            //{
 
-                item.ReadOnly = true;  
-            }
-            foreach (MaskedTextBox item in splitContainer1.Panel2.Controls.OfType<MaskedTextBox>())
-            {
-                item.ReadOnly = true;
+            //    item.ReadOnly = true;  
+            //}
+            //foreach (MaskedTextBox item in splitContainer1.Panel2.Controls.OfType<MaskedTextBox>())
+            //{
+            //    item.ReadOnly = true;
 
-            }
-            foreach (ComboBox item in splitContainer1.Panel2.Controls.OfType<ComboBox>())
-            {
-                item.Enabled = false;
+            //}
+            //foreach (ComboBox item in splitContainer1.Panel2.Controls.OfType<ComboBox>())
+            //{
+            //    item.Enabled = false;
 
-            }
+            //}
+            btn_insert.Visible= false;
         }
         DAL.ManufacturersInformation.DataSet_ManufacturersInformation.mManufacturersInformationDataTable dt_C;
         void CmbGiveValue()

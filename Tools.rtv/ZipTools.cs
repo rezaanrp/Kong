@@ -200,7 +200,7 @@ namespace Tools.rtv
           }
       }
 
-      private static int maxBufferSize;
+      private static int maxBufferSize = 0;
 
 
 

@@ -8,7 +8,7 @@
   <Shapes>
     <Shape ID="DesignTable:mStatementRentalIncomeSurvey" ZOrder="3" X="24" Y="58" Height="191" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="140" />
     <Shape ID="DesignTable:SlStatementRentalIncome" ZOrder="2" X="25" Y="258" Height="305" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="254" />
-    <Shape ID="DesignTable:SlStatementRentalIncomeSmsBeforeEndContract" ZOrder="1" X="330" Y="68" Height="134" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="83" />
+    <Shape ID="DesignTable:SlStatementRentalIncomeSmsBeforeEndContract" ZOrder="1" X="462" Y="198" Height="191" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="140" />
   </Shapes>
   <Connectors />
 </DiagramLayout>

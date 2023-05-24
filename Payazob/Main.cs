@@ -14,7 +14,7 @@ namespace MIS
         {
 
             InitializeComponent();
-           // new CS.csSMS().CheckRentalIncomeSmsBeforeEndContract();
+            new CS.csSMS().CheckRentalIncomeSmsBeforeEndContract();
             this.Show();
 
             foreach (InputLanguage il in InputLanguage.InstalledInputLanguages)

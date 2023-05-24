@@ -1473,6 +1473,8 @@ namespace DAL.RealEstate {
             
             private global::System.Data.DataColumn columnxSmsBeforeEndContract;
             
+            private global::System.Data.DataColumn columnxContractNumber;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public SlStatementRentalIncomeSmsBeforeEndContractDataTable() {
@@ -1548,6 +1550,14 @@ namespace DAL.RealEstate {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn xContractNumberColumn {
+                get {
+                    return this.columnxContractNumber;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1583,14 +1593,15 @@ namespace DAL.RealEstate {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SlStatementRentalIncomeSmsBeforeEndContractRow AddSlStatementRentalIncomeSmsBeforeEndContractRow(string xContractEndDate, string xLessorTel, string xTenantTel, bool xSmsBeforeEndContract) {
+            public SlStatementRentalIncomeSmsBeforeEndContractRow AddSlStatementRentalIncomeSmsBeforeEndContractRow(string xContractEndDate, string xLessorTel, string xTenantTel, bool xSmsBeforeEndContract, string xContractNumber) {
                 SlStatementRentalIncomeSmsBeforeEndContractRow rowSlStatementRentalIncomeSmsBeforeEndContractRow = ((SlStatementRentalIncomeSmsBeforeEndContractRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         xContractEndDate,
                         xLessorTel,
                         xTenantTel,
-                        xSmsBeforeEndContract};
+                        xSmsBeforeEndContract,
+                        xContractNumber};
                 rowSlStatementRentalIncomeSmsBeforeEndContractRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSlStatementRentalIncomeSmsBeforeEndContractRow);
                 return rowSlStatementRentalIncomeSmsBeforeEndContractRow;
@@ -1625,6 +1636,7 @@ namespace DAL.RealEstate {
                 this.columnxLessorTel = base.Columns["xLessorTel"];
                 this.columnxTenantTel = base.Columns["xTenantTel"];
                 this.columnxSmsBeforeEndContract = base.Columns["xSmsBeforeEndContract"];
+                this.columnxContractNumber = base.Columns["xContractNumber"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1640,6 +1652,8 @@ namespace DAL.RealEstate {
                 base.Columns.Add(this.columnxTenantTel);
                 this.columnxSmsBeforeEndContract = new global::System.Data.DataColumn("xSmsBeforeEndContract", typeof(bool), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnxSmsBeforeEndContract);
+                this.columnxContractNumber = new global::System.Data.DataColumn("xContractNumber", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnxContractNumber);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnx_}, true));
                 this.columnx_.AutoIncrement = true;
@@ -1651,6 +1665,7 @@ namespace DAL.RealEstate {
                 this.columnxContractEndDate.MaxLength = 10;
                 this.columnxLessorTel.MaxLength = 11;
                 this.columnxTenantTel.MaxLength = 11;
+                this.columnxContractNumber.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3018,6 +3033,23 @@ namespace DAL.RealEstate {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string xContractNumber {
+                get {
+                    try {
+                        return ((string)(this[this.tableSlStatementRentalIncomeSmsBeforeEndContract.xContractNumberColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'xContractNumber\' in table \'SlStatementRentalIncomeSmsBefore" +
+                                "EndContract\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSlStatementRentalIncomeSmsBeforeEndContract.xContractNumberColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsxContractEndDateNull() {
                 return this.IsNull(this.tableSlStatementRentalIncomeSmsBeforeEndContract.xContractEndDateColumn);
             }
@@ -3062,6 +3094,18 @@ namespace DAL.RealEstate {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetxSmsBeforeEndContractNull() {
                 this[this.tableSlStatementRentalIncomeSmsBeforeEndContract.xSmsBeforeEndContractColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsxContractNumberNull() {
+                return this.IsNull(this.tableSlStatementRentalIncomeSmsBeforeEndContract.xContractNumberColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetxContractNumberNull() {
+                this[this.tableSlStatementRentalIncomeSmsBeforeEndContract.xContractNumberColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -4812,6 +4856,7 @@ WHERE        (xStatementRentalIncome_ = @xStatementRentalIncome_) AND (xGenSurve
             tableMapping.ColumnMappings.Add("xLessorTel", "xLessorTel");
             tableMapping.ColumnMappings.Add("xTenantTel", "xTenantTel");
             tableMapping.ColumnMappings.Add("xSmsBeforeEndContract", "xSmsBeforeEndContract");
+            tableMapping.ColumnMappings.Add("xContractNumber", "xContractNumber");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;

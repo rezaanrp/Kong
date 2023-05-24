@@ -223,7 +223,7 @@ namespace MIS.FRM.ManufacturersInformation
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(75, 47);
             this.btn_Cancel.TabIndex = 1;
-            this.btn_Cancel.Text = "انصراف";
+            this.btn_Cancel.Text = "بازگشت";
             this.btn_Cancel.UseVisualStyleBackColor = false;
             this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
             // 
