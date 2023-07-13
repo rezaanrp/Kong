@@ -304,6 +304,18 @@
     <Compile Include="FRM\Goods\frmGoods.Designer.cs">
       <DependentUpon>frmGoods.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRM\Indicator\frmIndicatorFiling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM\Indicator\frmIndicatorFiling.Designer.cs">
+      <DependentUpon>frmIndicatorFiling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM\Indicator\frmIndicatorFilingInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM\Indicator\frmIndicatorFilingInsert.Designer.cs">
+      <DependentUpon>frmIndicatorFilingInsert.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRM\ManufacturersInformation\frmManufacturersInformationInProcessProjectNeeds.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -724,6 +736,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRM\Goods\frmGoods.resx">
       <DependentUpon>frmGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM\Indicator\frmIndicatorFiling.resx">
+      <DependentUpon>frmIndicatorFiling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM\Indicator\frmIndicatorFilingInsert.resx">
+      <DependentUpon>frmIndicatorFilingInsert.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM\ManufacturersInformation\frmManufacturersInformationInProcessProjectNeeds.resx">
       <DependentUpon>frmManufacturersInformationInProcessProjectNeeds.cs</DependentUpon>

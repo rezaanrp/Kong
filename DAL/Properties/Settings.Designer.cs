@@ -12,7 +12,7 @@ namespace DAL.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.4.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.5.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -32,16 +32,6 @@ namespace DAL.Properties {
             }
             set {
                 this["Con"] = value;
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute(" Data Source=192.168.1.200;Initial Catalog=PARKER;; User ID=sa;Password=; ")]
-        public string PayazobConnectionString {
-            get {
-                return ((string)(this["PayazobConnectionString"]));
             }
         }
         
@@ -72,6 +62,17 @@ namespace DAL.Properties {
         public string EOS_93ConnectionString1 {
             get {
                 return ((string)(this["EOS_93ConnectionString1"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute(" Data Source=37.255.225.172;Initial Catalog=PARKER;; User ID=sa;Password=K500at10" +
+            "; ")]
+        public string PayazobConnectionString {
+            get {
+                return ((string)(this["PayazobConnectionString"]));
             }
         }
     }

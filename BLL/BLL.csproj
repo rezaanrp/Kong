@@ -68,6 +68,7 @@
     <Compile Include="GenGroup\csGenGroup.cs" />
     <Compile Include="GoodsAndSupplierInfo\csGoodsAndSupplierInfo.cs" />
     <Compile Include="Goods\csGoods.cs" />
+    <Compile Include="Indicator\csIndicator.cs" />
     <Compile Include="ManufacturersInformation\csManufacturersInformation.cs" />
     <Compile Include="Marketer\csMarketer.cs" />
     <Compile Include="Object\csObject.cs" />

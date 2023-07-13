@@ -165,6 +165,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet_Goods.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Indicator\DataSet_Indicator.cs">
+      <DependentUpon>DataSet_Indicator.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Indicator\DataSet_Indicator.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Indicator.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ManagerReport\DataSet_InventoryPiecesForManager.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -587,6 +595,17 @@
     </None>
     <None Include="Goods\DataSet_Goods.xss">
       <DependentUpon>DataSet_Goods.xsd</DependentUpon>
+    </None>
+    <None Include="Indicator\DataSet_Indicator.xsc">
+      <DependentUpon>DataSet_Indicator.xsd</DependentUpon>
+    </None>
+    <None Include="Indicator\DataSet_Indicator.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Indicator.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Indicator\DataSet_Indicator.xss">
+      <DependentUpon>DataSet_Indicator.xsd</DependentUpon>
     </None>
     <None Include="ManagerReport\DataSet_InventoryPiecesForManager.xsc">
       <DependentUpon>DataSet_InventoryPiecesForManager.xsd</DependentUpon>

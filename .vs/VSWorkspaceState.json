@@ -1,11 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\DAL\\Properties",
-    "\\Payazob",
-    "\\Payazob\\FRM",
-    "\\Payazob\\FRM\\ClientReferral"
+    ""
   ],
-  "SelectedNode": "\\Payazob\\FRM\\ClientReferral\\frmClientReferral.cs",
   "PreviewInSolutionExplorer": false
 }

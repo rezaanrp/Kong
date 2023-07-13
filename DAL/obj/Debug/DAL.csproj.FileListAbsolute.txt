@@ -83,3 +83,11 @@ C:\Users\r.tavili\Source\Repos\Kong\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.c
 C:\Users\r.tavili\Source\Repos\Kong\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\r.tavili\Source\Repos\Kong\DAL\obj\Debug\DAL.dll
 C:\Users\r.tavili\Source\Repos\Kong\DAL\obj\Debug\DAL.pdb
+C:\Users\reza\Source\Repos\Kong\DAL\bin\Debug\DAL.dll.config
+C:\Users\reza\Source\Repos\Kong\DAL\bin\Debug\DAL.dll
+C:\Users\reza\Source\Repos\Kong\DAL\bin\Debug\DAL.pdb
+C:\Users\reza\Source\Repos\Kong\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\reza\Source\Repos\Kong\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\reza\Source\Repos\Kong\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\reza\Source\Repos\Kong\DAL\obj\Debug\DAL.dll
+C:\Users\reza\Source\Repos\Kong\DAL\obj\Debug\DAL.pdb

@@ -55,3 +55,10 @@ C:\Users\r.tavili\Source\Repos\Kong\DLQ\obj\Debug\DLQ.csproj.AssemblyReference.c
 C:\Users\r.tavili\Source\Repos\Kong\DLQ\obj\Debug\DLQ.csproj.CoreCompileInputs.cache
 C:\Users\r.tavili\Source\Repos\Kong\DLQ\obj\Debug\DLQ.dll
 C:\Users\r.tavili\Source\Repos\Kong\DLQ\obj\Debug\DLQ.pdb
+C:\Users\reza\Source\Repos\Kong\DLQ\bin\Debug\DLQ.dll.config
+C:\Users\reza\Source\Repos\Kong\DLQ\bin\Debug\DLQ.dll
+C:\Users\reza\Source\Repos\Kong\DLQ\bin\Debug\DLQ.pdb
+C:\Users\reza\Source\Repos\Kong\DLQ\obj\Debug\DLQ.csproj.AssemblyReference.cache
+C:\Users\reza\Source\Repos\Kong\DLQ\obj\Debug\DLQ.csproj.CoreCompileInputs.cache
+C:\Users\reza\Source\Repos\Kong\DLQ\obj\Debug\DLQ.dll
+C:\Users\reza\Source\Repos\Kong\DLQ\obj\Debug\DLQ.pdb

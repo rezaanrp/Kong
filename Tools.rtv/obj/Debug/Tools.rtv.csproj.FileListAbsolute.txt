@@ -31,3 +31,9 @@ C:\Users\r.tavili\Source\Repos\Kong\Tools.rtv\obj\Debug\Tools.rtv.csproj.Assembl
 C:\Users\r.tavili\Source\Repos\Kong\Tools.rtv\obj\Debug\Tools.rtv.csproj.CoreCompileInputs.cache
 C:\Users\r.tavili\Source\Repos\Kong\Tools.rtv\obj\Debug\Tools.rtv.dll
 C:\Users\r.tavili\Source\Repos\Kong\Tools.rtv\obj\Debug\Tools.rtv.pdb
+C:\Users\reza\Source\Repos\Kong\Tools.rtv\bin\Debug\Tools.rtv.dll
+C:\Users\reza\Source\Repos\Kong\Tools.rtv\bin\Debug\Tools.rtv.pdb
+C:\Users\reza\Source\Repos\Kong\Tools.rtv\obj\Debug\Tools.rtv.csproj.AssemblyReference.cache
+C:\Users\reza\Source\Repos\Kong\Tools.rtv\obj\Debug\Tools.rtv.csproj.CoreCompileInputs.cache
+C:\Users\reza\Source\Repos\Kong\Tools.rtv\obj\Debug\Tools.rtv.dll
+C:\Users\reza\Source\Repos\Kong\Tools.rtv\obj\Debug\Tools.rtv.pdb

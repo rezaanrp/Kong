@@ -10,6 +10,9 @@ namespace MIS.CS
             Form f;
             switch (frm)
             {
+                case "IndicatorFiling":
+                    f = new FRM.Indicator.frmIndicatorFiling(true);
+                    break;
                 case "ManufacturersInformation_Process":
                     f = new FRM.ManufacturersInformation.frmManufacturersInformation(true);
                     break;

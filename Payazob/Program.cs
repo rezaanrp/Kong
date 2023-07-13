@@ -27,8 +27,8 @@ namespace MIS
             if (frm.EnterSuccess)
             {
             //   new Form2().ShowDialog();
-           // new FRM.RealEstate.frmStatementRefer( CS.csEnum.ReferTo.mali).ShowDialog();
-                Application.Run(new Main());
+          //  new FRM.Indicator.frmIndicatorFiling(false).ShowDialog();
+               Application.Run(new Main());
             }
         }
 

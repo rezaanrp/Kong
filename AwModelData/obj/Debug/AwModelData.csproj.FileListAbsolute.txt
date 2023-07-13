@@ -61,3 +61,13 @@ C:\Users\r.tavili\Source\Repos\Kong\AwModelData\obj\Debug\AwModelData.csproj.Cor
 C:\Users\r.tavili\Source\Repos\Kong\AwModelData\obj\Debug\AwModelData.csproj.CopyComplete
 C:\Users\r.tavili\Source\Repos\Kong\AwModelData\obj\Debug\AwModelData.dll
 C:\Users\r.tavili\Source\Repos\Kong\AwModelData\obj\Debug\AwModelData.pdb
+C:\Users\reza\Source\Repos\Kong\AwModelData\bin\Debug\AwModelData.dll.config
+C:\Users\reza\Source\Repos\Kong\AwModelData\bin\Debug\AwModelData.dll
+C:\Users\reza\Source\Repos\Kong\AwModelData\bin\Debug\AwModelData.pdb
+C:\Users\reza\Source\Repos\Kong\AwModelData\bin\Debug\EntityFramework.dll
+C:\Users\reza\Source\Repos\Kong\AwModelData\bin\Debug\EntityFramework.xml
+C:\Users\reza\Source\Repos\Kong\AwModelData\obj\Debug\AwModelData.csproj.AssemblyReference.cache
+C:\Users\reza\Source\Repos\Kong\AwModelData\obj\Debug\AwModelData.csproj.CoreCompileInputs.cache
+C:\Users\reza\Source\Repos\Kong\AwModelData\obj\Debug\AwModelData.csproj.CopyComplete
+C:\Users\reza\Source\Repos\Kong\AwModelData\obj\Debug\AwModelData.dll
+C:\Users\reza\Source\Repos\Kong\AwModelData\obj\Debug\AwModelData.pdb

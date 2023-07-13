@@ -414,7 +414,19 @@ namespace MIS.CS
             dictionary.Add("xReasonsNotAchievingOrAchievingResults", "دلایل عدم حصول و یا حصول نتایج");
             dictionary.Add("xGenFollowUpNeedResult_", "نتیجه");
 
+            //id, gen_transaction_type_, filing_expert, building_type, filing_date, gen_how_refer_, owner_name, owner_tel, serial, date_supplier, reason, supplier_
 
+            dictionary.Add("gen_transaction_type_", "نوع معامله");
+            dictionary.Add("filing_expert", "کارشناس فایلینگ");
+            dictionary.Add("building_type", "نوع ملک");
+            dictionary.Add("filing_date", "تاریخ فایلینگ");
+            dictionary.Add("gen_how_refer_", "نحوه مراجعه");
+            dictionary.Add("owner_name", "نام مالک");
+            dictionary.Add("owner_tel", "تلفن مالک");
+            dictionary.Add("serial", "سریال");
+            dictionary.Add("date_supplier", "تاریخ ثبت");
+            dictionary.Add("reason", "علت بایگانی");
+            dictionary.Add("supplier_", "ثبت کننده");
 
 
             if (dictionary.ContainsKey(StInput))
