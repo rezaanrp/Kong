@@ -68,8 +68,7 @@ namespace DAL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute(" Data Source=192.168.1.200;Initial Catalog=PARKER;; User ID=sa;Password=K500at10;" +
-            " ")]
+        [global::System.Configuration.DefaultSettingValueAttribute(" Data Source=192.168.1.200;Initial Catalog=PARKER; User ID=sa;Password=; ")]
         public string PayazobConnectionString {
             get {
                 return ((string)(this["PayazobConnectionString"]));
