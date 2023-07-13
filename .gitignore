@@ -3,3 +3,5 @@
 ################################################################################
 
 /DAL/app.config
+/DAL/Properties/Settings.settings
+/DAL/Properties/Settings.Designer.cs
